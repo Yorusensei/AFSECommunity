@@ -21,7 +21,7 @@ const selectClasses = {
 
 const targetCrateOpt: FloatingInputOptions = {
 	type: "text",
-	placeholder: "233",
+	placeholder: "0",
 	labelClassName: "text-terminal text-cyber-yellow text-glow-yellow",
 	inputClassName: "cyber-input cyber-input-yellow input-no-spinner text-terminal",
 };

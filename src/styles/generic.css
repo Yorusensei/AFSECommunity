@@ -226,6 +226,29 @@
 	z-index: 100;
 }
 
+.carousel-control-next-icon {
+	padding: 2rem;
+	background-size: 2rem;
+	background-color: black;
+	border-radius: 50%;
+}
+
+.carousel-control-prev-icon {
+	padding: 2rem;
+	background-size: 2rem;
+	background-color: black;
+	border-radius: 50%;
+}
+
+.carousel-caption > h5 {
+	background-color: #ffffff;
+	width: fit-content;
+	margin: auto;
+	opacity: 0.9;
+	border-radius: 0.75rem;
+	padding: 0.75rem;
+}
+
 .border-cyber-blue {
 	border: 1px solid var(--cyber-blue);
 }
@@ -422,7 +445,7 @@
 }
 
 .cyber-input-purple {
-	border: 1px solid rgba(238, 255, 0, 0.3);
+	border: 1px solid rgba(76, 0, 255, 0.3);
 }
 
 .cyber-input-purple:focus {

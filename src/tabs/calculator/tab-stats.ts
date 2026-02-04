@@ -45,7 +45,7 @@ const inputKeys = [
 const selectKeys = [
 	{
 		label: "STAT TYPE",
-		selectOptions: [{ value: "STRENGTH" }, { value: "DURABILITY" }, { value: "SHAKRA" }, { value: "SWORD" }],
+		selectOptions: [{ value: "STRENGTH" }, { value: "DURABILITY" }, { value: "CHAKRA" }, { value: "SWORD" }],
 	},
 	{
 		label: "MODE",

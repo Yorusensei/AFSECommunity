@@ -23,16 +23,16 @@ export default {
                             <div class="p-3 rounded bg-dark-2">
                                 <div class="flex items-center gap-2 mb-1">
                                     <span class="cyber-badge badge-green opacity-100">UPDATE</span>
-                                    <span class="text-sm terminal-text">[TODAY 5:27AM]</span>
+                                    <span class="text-sm terminal-text">[FEB 2, 2026 | 6:13AM]</span>
                                 </div>
-                                <p class="terminal-text">&gt; Added NPC &amp; Incremental Calculator.</p>
+                                <p class="terminal-text">&gt; Added Chikara Calculator.</p>
                             </div>
                             <div class="p-3 rounded bg-dark-2">
                                 <div class="flex items-center gap-2 mb-1">
                                     <span class="cyber-badge badge-blue opacity-100">IMPROVED</span>
-                                    <span class="text-sm terminal-text">[DAY 9]</span>
+                                    <span class="text-sm terminal-text">[DAY 16]</span>
                                 </div>
-                                <p class="terminal-text">&gt; Logics on calculator.</p>
+                                <p class="terminal-text">&gt; Upgraded UI. Logics on calculator.</p>
                             </div>
                         </div>
                     </div>
