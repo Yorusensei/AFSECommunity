@@ -49,7 +49,7 @@ $(function () {
 		}, 100);
 	});
 
-	$("#init").on("click", function () {
+	$("#init").on("click touchstart", function () {
 		$(this).fadeOut("slow", function () {
 			$(this).remove();
 			$("body").removeClass("overflow-hidden");
@@ -90,7 +90,7 @@ function init() {
         `);
 	});
 
-	$("[data-main-navbar] button").on("click", function () {
+	$("[data-main-navbar] button").on("click touchstart", function () {
 		const btnId = $(this).attr("id");
 		const tab = tabs.find((x) => x.btnId === btnId);
 
@@ -176,6 +176,6 @@ function init() {
 		const label = $storage.get("tabs:navigation:lastVisited");
 		const id = tabs.find((x) => x.label === label)?.btnId;
 
-		$(`#${id}`).trigger("click");
+		$(`#${id}`).trigger("click touchstart");
 	}
 }
