@@ -25,7 +25,7 @@ export default {
                     <div data-tab-changelog="true" class="cyber-card">
                         <h2 class="text-xl font-bold mb-4 text-glow-green">CHANGELOG</h2>
                         <div class="flex flex-col gap-2">
-                            ${sorted.slice(0, 4).map(formatChangelogEntry).join("")}
+                            ${sorted.slice(0, 5).map(formatChangelogEntry).join("")}
                         </div>
                     </div>
                 </div>
