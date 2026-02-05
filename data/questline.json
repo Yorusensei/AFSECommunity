@@ -12,7 +12,7 @@
 		{
 			"quest": 10,
 			"requirement": "100 Kurama kills",
-			"reward": "2D Boost, +5 Champion Inventory (F2P)"
+			"reward": "2D Boost, +5 Champion Inventory Slots (F2P)"
 		}
 	],
 	"kirito": [
@@ -85,22 +85,22 @@
 		},
 		{
 			"quest": 31,
-			"requirement": "Gain 200t Strength",
+			"requirement": "Gain 200T Strength",
 			"reward": "13,500,000 Yen"
 		},
 		{
 			"quest": 32,
-			"requirement": "Gain 200t Durability, 200t Chakra",
+			"requirement": "Gain 200T Durability, 200T Chakra",
 			"reward": "20,250,000 Yen"
 		},
 		{
 			"quest": 33,
-			"requirement": "Gain 50qd Strength",
+			"requirement": "Gain 50QD Strength",
 			"reward": "30,000,000 Yen"
 		},
 		{
 			"quest": 34,
-			"requirement": "Gain 50qd Durability, 50qd Chakra",
+			"requirement": "Gain 50QD Durability, 50QD Chakra",
 			"reward": "45,000,000 Yen"
 		},
 		{
@@ -125,32 +125,32 @@
 		},
 		{
 			"quest": 39,
-			"requirement": "Gain 1sx Strength",
+			"requirement": "Gain 1SX Strength",
 			"reward": "9,000,000,000 Yen"
 		},
 		{
 			"quest": 40,
-			"requirement": "Gain 1sx Durability, 1sx Chakra",
+			"requirement": "Gain 1SX Durability, 1SX Chakra",
 			"reward": "13,500,000,000 Yen"
 		},
 		{
 			"quest": 41,
-			"requirement": "Gain 100sx Strength",
+			"requirement": "Gain 100SX Strength",
 			"reward": "175,000,000,000 Yen"
 		},
 		{
 			"quest": 42,
-			"requirement": "Gain 100sx Durability, 100sx Chakra",
+			"requirement": "Gain 100SX Durability, 100SX Chakra",
 			"reward": "275,000,000,000 Yen"
 		},
 		{
 			"quest": 43,
-			"requirement": "Gain 1sp Strength",
+			"requirement": "Gain 1SP Strength",
 			"reward": "2,000,000,000,000 Yen"
 		},
 		{
 			"quest": 44,
-			"requirement": "Gain 1sp Durability, 1sp Chakra",
+			"requirement": "Gain 1SP Durability, 1SP Chakra",
 			"reward": "3,000,000,000,000 Yen"
 		}
 	],
@@ -284,7 +284,7 @@
 		{
 			"quest": 1,
 			"requirement": "Gain 1 Strength, 1 Durability, 1 Chakra",
-			"reward": "1 Day free BOOST - 1,500 Chikara"
+			"reward": "1 Day Free Boost - 1,500 Chikara"
 		}
 	]
 }
