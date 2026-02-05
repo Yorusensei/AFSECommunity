@@ -306,6 +306,30 @@
 	color: rgb(var(--cyber-yellow-rgb)) !important;
 }
 
+.hover\:text-cyber-green:hover {
+	color: rgb(var(--cyber-green-rgb)) !important;
+}
+
+.hover\:text-cyber-blue:hover {
+	color: rgb(var(--cyber-blue-rgb)) !important;
+}
+
+.hover\:text-cyber-red:hover {
+	color: rgb(var(--cyber-red-rgb)) !important;
+}
+
+.hover\:text-cyber-purple:hover {
+	color: rgb(var(--cyber-purple-rgb)) !important;
+}
+
+.hover\:text-cyber-pink:hover {
+	color: rgb(var(--cyber-pink-rgb)) !important;
+}
+
+.hover\:text-cyber-yellow:hover {
+	color: rgb(var(--cyber-yellow-rgb)) !important;
+}
+
 .text-glow {
 	text-shadow:
 		0 0 10px rgb(var(--cyber-glow-color-rgb) / var(--cyber-glow-alpha)),

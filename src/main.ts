@@ -18,6 +18,7 @@ import credits from "./tabs/credits";
 import gacha from "./tabs/gacha";
 import { backgroundMusic } from "./components/audiomanager";
 import $storage from "./components/storage";
+import { Tooltip } from "bootstrap";
 
 const tabsBase = [
 	{ icon: "bi-terminal", label: "DASHBOARD", active: true },
@@ -88,6 +89,15 @@ function init() {
                 </div>
             </div>
         `);
+
+		// Add tooltip
+		new Tooltip(`#${tab.btnId}`, {
+			animation: true,
+			title: tab.label,
+			customClass: "bg-dark-2 text-glow-blue bg-opacity-90 border-cyber border-opacity-30 rounded text-terminal tracking-widest",
+			placement: "bottom",
+			trigger: "hover",
+		});
 	});
 
 	$("[data-main-navbar] button").on("click touchstart", function () {
