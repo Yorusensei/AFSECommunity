@@ -194,6 +194,6 @@ function init() {
 		const label = $storage.get("tabs:navigation:lastVisited");
 		const id = tabs.find((x) => x.label === label)?.btnId;
 
-		$(`#${id}`).trigger("click touchstart");
+		$(`#${id}`).trigger("click").trigger("touchstart");
 	}
 }
