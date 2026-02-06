@@ -75,7 +75,13 @@ function format(entry: TrainingArea["entries"][number], areaName: string) {
 		touchSwipe: true,
 	});
 
-	const carouselCard = buildCarousel(toCarouselData(entry.images, "regular"), {
+	// Use thumbnail to reduce lag and framedrops
+	const thumbimg = entry.images.map((x) => ({
+		...x,
+		path: x.path.replace("/trainingareas/", "/trainingareas/thumb-"),
+	}));
+
+	const carouselCard = buildCarousel(toCarouselData(thumbimg, "regular"), {
 		className: "opacity-25 group-hover:opacity-100",
 	});
 
