@@ -45,11 +45,10 @@ jobs:
          description: issue.body ? issue.body.substr(0, 2048) : undefined,
          fields: [
            { name: 'Issue', value: `#${issue.number}`, inline: true },
-           { name: 'State', value: issue.state, inline: true },
-           { name: 'Action', value: context.payload.action, inline: true }
+           { name: 'State', value: issue.state, inline: true }
          ],
          footer: { 
-           text: `${context.repo.owner}/${context.repo.repo}` 
+           text: `${context.repo.owner}/${context.repo.repo}`
          },
          timestamp: new Date().toISOString(),
        };
@@ -95,11 +94,10 @@ jobs:
          fields: [
            { name: 'PR', value: `#${pull_request.number}`, inline: true },
            { name: 'Status', value: isMerged ? 'merged' : pull_request.state, inline: true },
-           { name: 'Action', value: effectiveAction, inline: true },
            { name: 'Branch', value: `${pull_request.head.ref} → ${pull_request.base.ref}`, inline: false }
          ],
          footer: { 
-           text: `${context.repo.owner}/${context.repo.repo}` 
+           text: `${context.repo.owner}/${context.repo.repo}`
          },
          timestamp: new Date().toISOString(),
        };
@@ -129,11 +127,9 @@ jobs:
          title: 'Star added',
          url: repository.html_url,
          color: 0xF0C674,
-         description: `Starred the repository`,
-         fields: [
-           { name: 'Total Stars', value: `${repository.stargazers_count}`, inline: true },
-           { name: 'Repository', value: repository.full_name, inline: true }
-         ],
+         footer: { 
+           text: `${context.repo.owner}/${context.repo.repo}`
+         },
          timestamp: new Date().toISOString(),
        };
 
@@ -162,11 +158,12 @@ jobs:
          title: 'Repository forked',
          url: forkee.html_url,
          color: 0x6E7681,
-         description: `Forked from ${repository.full_name}`,
          fields: [
-           { name: 'Repository', value: forkee.full_name, inline: true },
            { name: 'Source', value: repository.full_name, inline: true }
          ],
+         footer: { 
+           text: `${forkee.owner.login}/${forkee.name}`
+         },
          timestamp: new Date().toISOString(),
        };
 
@@ -195,11 +192,13 @@ jobs:
          title: `${ref_type} created`,
          url: repository.html_url,
          color: 0x238636,
-         description: `${ref_type}: ${ref}`,
          fields: [
-           { name: 'Repository', value: repository.full_name, inline: true },
+           { name: 'Ref', value: ref, inline: true },
            { name: 'Type', value: ref_type, inline: true }
          ],
+         footer: { 
+           text: `${context.repo.owner}/${context.repo.repo}`
+         },
          timestamp: new Date().toISOString(),
        };
 
