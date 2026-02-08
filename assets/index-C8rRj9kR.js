@@ -650,18 +650,15 @@ If it declares any Font Awesome CSS pseudo-elements, they will not be rendered a
                 <h2 class="text-2xl font-bold mb-6 text-glow-red">${Jo.header}</h2>
                 <div class="my-3" data-bs-theme="dark">
                     <span class="d-block font-bold text-glow-red text-lg">STATS</span>
-                    <div class="row g-2">${h.join("")}</div>
+                    <div class="row g-2">
+                        ${h.join("")}
+                        <div class="col-sm-6 col-md-4">${u.input}</div>
+                    </div>
                 </div>
                 <div class="my-3" data-bs-theme="dark">
                     <span class="d-block font-bold text-glow-red text-lg">BROWSER NOTIFICATIONS</span>
                     <div class="row g-2">
                         <div class="col-sm-6 col-md-4">${c.input}</div>
-                    </div>
-                </div>
-                <div class="my-3" data-bs-theme="dark">
-                    <span class="d-block font-bold text-glow-red text-lg">TOKEN MULTIPLIER</span>
-                    <div class="row g-2">
-                        <div class="col-sm-6 col-md-4">${u.input}</div>
                     </div>
                 </div>
                 <div class="mt-5 mb-3">
