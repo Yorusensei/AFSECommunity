@@ -323,7 +323,7 @@
 		{
 			"quest": 2,
 			"requirement": "Gain 1QN Strength, 1QN Durability, 1QN Chakra.",
-			"reward": "400M Yent."
+			"reward": "400M Yen."
 		},
 		{
 			"quest": 3,
@@ -342,7 +342,7 @@
 		},
 		{
 			"quest": 6,
-			"requirement": "Defeat 250 Makimo.",
+			"requirement": "Defeat 250 Makima.",
 			"reward": "2 Day Self Boost."
 		},
 		{
