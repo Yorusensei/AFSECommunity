@@ -1,5 +1,5 @@
 {
-	"version": "4.5",
+	"version": "4.5.1",
 	"changelog": [
 		{
 			"type": "removed",
@@ -69,7 +69,7 @@
 		{
 			"type": "added",
 			"timestamp": 1770653353237,
-			"list": ["Added new questlines."]
+			"list": ["Added new questlines & New Chmapions."]
 		}
 	]
 }
