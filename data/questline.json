@@ -337,7 +337,7 @@
 		},
 		{
 			"quest": 5,
-			"requirement": "Gain 1SX Strength, 1SX Durability, 1SX Chakra.",
+			"requirement": "Gain 1SX Strength, 1SX Durability, 1SX Sword.",
 			"reward": "2T Yen."
 		},
 		{
@@ -367,7 +367,7 @@
 		},
 		{
 			"quest": 11,
-			"requirement": "Gain 1OC SP Strength, 1OC Durability, 1OC Chakra.",
+			"requirement": "Defeat 75 Kurama",
 			"reward": "New Champion (NAMI), +5 Champion Inventory Slots (F2P)."
 		}
 	],

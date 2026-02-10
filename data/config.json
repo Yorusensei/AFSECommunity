@@ -70,6 +70,11 @@
 			"type": "added",
 			"timestamp": 1770672165967,
 			"list": ["Added new questlines & New Champions."]
+		},
+		{
+			"type": "update",
+			"timestamp": 1770718992639,
+			"list": ["Changes of Questlines on Nami."]
 		}
 	]
 }
