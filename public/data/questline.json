@@ -354,6 +354,21 @@
 			"quest": 8,
 			"requirement": "Gain 100SP Strength, 100SP Durability, 100SP Chakra.",
 			"reward": "20T Yen."
+		},
+		{
+			"quest": 9,
+			"requirement": "Defeat 500 Esdeath.",
+			"reward": "2 Days Self Boost."
+		},
+		{
+			"quest": 10,
+			"requirement": "15K Increments on Strength, Durability, Sword.",
+			"reward": "150K Chikara."
+		},
+		{
+			"quest": 11,
+			"requirement": "Gain 1OC SP Strength, 1OC Durability, 1OC Chakra.",
+			"reward": "New Champion (NAMI), +5 Champion Inventory Slots (F2P)."
 		}
 	],
 	"esdeath": [
