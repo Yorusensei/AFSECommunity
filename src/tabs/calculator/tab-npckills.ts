@@ -395,16 +395,6 @@ export default {
 			let isValid = true;
 			const heartInputs = [champHeartMultiInput, currentHeartInput, requiredHeartInput];
 			const values: { label: (typeof heartInputs)[number]["label"]; value: number }[] = [];
-			const defaultVals: Record<string, number> = {
-				"CHAMP HEART MULTI": 1,
-			};
-
-			// Setup default values
-			for (const [k, v] of Object.entries(defaultVals)) {
-				const input = heartInputs.find((x) => (k as (typeof heartInputs)[number]["label"]) === x.label);
-				if (!input) return;
-				input.$().val(v);
-			}
 
 			// Validate input values
 			for (const input of heartInputs) {
