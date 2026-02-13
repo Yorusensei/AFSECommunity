@@ -403,7 +403,8 @@ export default {
 			for (const [k, v] of Object.entries(defaultVals)) {
 				const input = heartInputs.find((x) => (k as (typeof heartInputs)[number]["label"]) === x.label);
 				if (!input) return;
-				input.$().val(v);
+				const $input = input.$();
+				$input.val(($input.val() as string | undefined)?.trim()?.length ? ($input.val() as string) : v);
 			}
 
 			// Validate input values
