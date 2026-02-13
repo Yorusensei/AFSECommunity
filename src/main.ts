@@ -1,5 +1,4 @@
 import $ from "jquery";
-import "bootstrap/dist/js/bootstrap.bundle.min.js";
 import "./styles/cyber.css";
 import "./icons";
 
