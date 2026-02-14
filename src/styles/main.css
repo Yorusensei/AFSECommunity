@@ -2816,7 +2816,7 @@ input:checked + .toggle-slider:before {
 	margin-bottom: 4px;
 }
 
-/* Make all icons the same size */
+/* Make all icons the same size - including new ones */
 .stat-icon svg,
 .stat-icon i,
 .stat-icon .lucide,
@@ -2824,6 +2824,9 @@ input:checked + .toggle-slider:before {
 .lucide,
 .lucide-Sword,
 .lucide-biceps-flexed,
+.lucide-badge-japanese-yen,
+.lucide-gem,
+.lucide-heart,
 .stat-icon svg {
 	width: 24px !important;
 	height: 24px !important;
@@ -2844,19 +2847,28 @@ input:checked + .toggle-slider:before {
 
 /* Different colors for different boards - Icons */
 .champion-card[data-board="1"] .stat-icon,
-.champion-card[data-board="1"] .lucide-biceps-flexed {
+.champion-card[data-board="1"] .lucide-biceps-flexed,
+.champion-card[data-board="1"] .lucide-badge-japanese-yen,
+.champion-card[data-board="1"] .lucide-gem,
+.champion-card[data-board="1"] .lucide-heart {
 	color: var(--cyber-blue);
 	filter: drop-shadow(0 0 3px var(--cyber-blue-glow));
 }
 
 .champion-card[data-board="2"] .stat-icon,
-.champion-card[data-board="2"] .lucide-biceps-flexed {
+.champion-card[data-board="2"] .lucide-biceps-flexed,
+.champion-card[data-board="2"] .lucide-badge-japanese-yen,
+.champion-card[data-board="2"] .lucide-gem,
+.champion-card[data-board="2"] .lucide-heart {
 	color: var(--cyber-purple);
 	filter: drop-shadow(0 0 3px var(--cyber-purple-glow));
 }
 
 .champion-card[data-board="3"] .stat-icon,
-.champion-card[data-board="3"] .lucide-biceps-flexed {
+.champion-card[data-board="3"] .lucide-biceps-flexed,
+.champion-card[data-board="3"] .lucide-badge-japanese-yen,
+.champion-card[data-board="3"] .lucide-gem,
+.champion-card[data-board="3"] .lucide-heart {
 	color: var(--cyber-pink);
 	filter: drop-shadow(0 0 3px var(--cyber-pink-glow));
 }
@@ -2910,6 +2922,9 @@ input:checked + .toggle-slider:before {
 	.lucide,
 	.lucide-Sword,
 	.lucide-biceps-flexed,
+	.lucide-badge-japanese-yen,
+	.lucide-gem,
+	.lucide-heart,
 	.stat-icon svg {
 		width: 20px !important;
 		height: 20px !important;

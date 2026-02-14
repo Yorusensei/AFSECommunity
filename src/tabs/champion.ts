@@ -97,7 +97,7 @@ export default {
 		// Store original items for reset
 		let originalItems: HTMLElement[] = [];
 
-		// Updated sortType to include stat options
+		// Updated sortType to include Yen, Chikara, and Heart passive options
 		const sortType = [
 			"Name (ASC)",
 			"Name (DESC)",
@@ -115,6 +115,12 @@ export default {
 			"Sword (DESC)",
 			"Chakra (ASC)",
 			"Chakra (DESC)",
+			"Yen (ASC)",
+			"Yen (DESC)",
+			"Chikara (ASC)",
+			"Chikara (DESC)",
+			"Heart (ASC)",
+			"Heart (DESC)",
 		] as const;
 
 		const sortId = generateUniqueId();
@@ -212,6 +218,9 @@ export default {
 			// First, check if this is a stat sort
 			const statMatch = type.match(/(Strength|Durability|Agility|Sword|Chakra) \((ASC|DESC)\)/i);
 
+			// Check if this is a passive income sort (Yen, Chikara, Heart)
+			const passiveMatch = type.match(/(Yen|Chikara|Heart) \((ASC|DESC)\)/i);
+
 			if (statMatch) {
 				const statName = statMatch[1].toLowerCase();
 
@@ -230,7 +239,6 @@ export default {
 						const $statItem = $(statItem);
 						const icon = $statItem.find(".stat-icon").html() || "";
 
-						// Updated to use lucide-biceps-flexed for strength
 						if (statName === "strength" && icon.includes("lucide-biceps-flexed")) {
 							hasStat = true;
 						} else if (statName === "sword" && icon.includes("lucide-Sword")) {
@@ -266,7 +274,6 @@ export default {
 							const $item = $(item);
 							const icon = $item.find(".stat-icon").html() || "";
 
-							// Updated to use lucide-biceps-flexed for strength
 							if (statName === "strength" && icon.includes("lucide-biceps-flexed")) {
 								const valueText = $item.find(".stat-value").text();
 								statValue = parseFloat(valueText) || 0;
@@ -299,6 +306,66 @@ export default {
 
 				// Add sorted items with the stat
 				itemsWithStat.forEach((item) => container.append(item));
+			} else if (passiveMatch) {
+				const passiveType = passiveMatch[1].toLowerCase();
+				const direction = passiveMatch[2];
+
+				// Determine which modifier key to look for
+				let modifierKey = "";
+				if (passiveType === "yen") modifierKey = "yen_income";
+				else if (passiveType === "chikara") modifierKey = "chikara_income";
+				else if (passiveType === "heart") modifierKey = "heart_income";
+
+				// Separate items into those with the passive and those without
+				const itemsWithPassive: HTMLElement[] = [];
+				const itemsWithoutPassive: HTMLElement[] = [];
+
+				allItems.forEach((item) => {
+					const card = $(item).find(".champion-card");
+
+					// Check if this card has the passive by looking at the modifiers section
+					const modifierText = card.find(".text-sm").last().text() || "";
+					let hasPassive = false;
+					let passiveValue = 0;
+
+					if (passiveType === "yen" && modifierText.includes("YEN/MIN")) {
+						hasPassive = true;
+						// Extract the multiplier value (e.g., x1.25 -> 1.25)
+						const match = modifierText.match(/YEN\/MIN: x([\d.]+)/i);
+						if (match) passiveValue = parseFloat(match[1]);
+					} else if (passiveType === "chikara" && modifierText.includes("CHIKARA/MIN")) {
+						hasPassive = true;
+						const match = modifierText.match(/CHIKARA\/MIN: x([\d.]+)/i);
+						if (match) passiveValue = parseFloat(match[1]);
+					} else if (passiveType === "heart" && modifierText.includes("HEARTS/MIN")) {
+						hasPassive = true;
+						const match = modifierText.match(/HEARTS\/MIN: x([\d.]+)/i);
+						if (match) passiveValue = parseFloat(match[1]);
+					}
+
+					if (hasPassive) {
+						// Store the value as a data attribute for sorting
+						$(item).data("passiveValue", passiveValue);
+						itemsWithPassive.push(item);
+					} else {
+						itemsWithoutPassive.push(item);
+					}
+				});
+
+				// Sort only the items that have the passive
+				itemsWithPassive.sort((a, b) => {
+					const valueA = $(a).data("passiveValue") || 0;
+					const valueB = $(b).data("passiveValue") || 0;
+					return direction === "ASC" ? valueA - valueB : valueB - valueA;
+				});
+
+				// Clear container
+				container.empty();
+
+				// Add sorted items with the passive
+				itemsWithPassive.forEach((item) => container.append(item));
+
+				console.log(`Showing ${itemsWithPassive.length} champions with ${passiveType} passive`);
 			} else {
 				// For non-stat sorts (Name, Chance, Selling Cost), show all items
 				allItems.sort((a, b) => {

@@ -2,7 +2,7 @@ import type { Champion } from "../types/data";
 
 export function renderChampions(champions: Champion[]): string {
 	function map(c: Champion) {
-		// Format base stats for display with Bootstrap Icons
+		// Format base stats for display with Icons
 		const baseStats = Object.entries(c.stats.base)
 			.map(([key, value]) => {
 				const icons: Record<string, string> = {
@@ -11,6 +11,9 @@ export function renderChampions(champions: Champion[]): string {
 					durability: '<i class="bi bi-shield"></i>',
 					agility: '<i class="bi bi-wind"></i>',
 					chakra: '<i class="bi bi-fire"></i>',
+					yen: '<i class="lucide lucide-badge-japanese-yen"></i>',
+					chikara: '<i class="lucide lucide-gem"></i>',
+					heart: '<i class="lucide lucide-heart"></i>',
 				};
 				return `
                     <div class="stat-item d-flex flex-column align-items-center">
