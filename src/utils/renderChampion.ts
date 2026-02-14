@@ -15,12 +15,26 @@ export function renderChampions(champions: Champion[]): string {
 					chikara: '<i class="lucide lucide-gem"></i>',
 					heart: '<i class="lucide lucide-heart"></i>',
 				};
+				// Get display name for the stat
+				const statDisplayName =
+					{
+						strength: "STR",
+						sword: "SWORD",
+						durability: "DURA",
+						agility: "AGI&SPD",
+						chakra: "CHAKRA",
+						yen: "YEN",
+						chikara: "CHIKARA",
+						heart: "HEART",
+					}[key] || key.toUpperCase();
+
 				return `
-                    <div class="stat-item d-flex flex-column align-items-center">
-                        <span class="stat-icon mb-1">${icons[key] || key}</span>
-                        <span class="stat-value font-medium">${Math.round(value * 100)}%</span>
-                    </div>
-                `;
+			<div class="stat-item d-flex flex-column align-items-center">
+				<span class="stat-name">${statDisplayName}</span>
+				<span class="stat-icon mb-1">${icons[key] || key}</span>
+				<span class="stat-value font-medium">${Math.round(value * 100)}%</span>
+			</div>
+		`;
 			})
 			.join("");
 

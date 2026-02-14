@@ -2789,22 +2789,29 @@ input:checked + .toggle-slider:before {
 .stat-item {
 	min-width: 70px;
 	width: 70px;
-	height: 70px;
+	height: 85px; /* Increased height to accommodate text above */
 	display: flex;
 	flex-direction: column;
 	align-items: center;
 	justify-content: center;
 	text-align: center;
-	padding: 8px 4px;
+	padding: 8px 4px 4px 4px;
 	background: rgba(0, 0, 0, 0.3);
 	border-radius: 8px;
 	border: 1px solid rgba(0, 243, 255, 0.2);
 	transition: all 0.2s ease;
+	position: relative;
 }
 
-/* Hover effect */
-.stat-item:hover {
-	transform: translateY(-2px);
+/* Stat name text above icon */
+.stat-name {
+	font-family: "Share Tech Mono", monospace;
+	font-size: 0.65rem;
+	font-weight: bold;
+	text-transform: uppercase;
+	margin-bottom: 4px;
+	color: var(--gray);
+	letter-spacing: 0.5px;
 }
 
 .stat-icon {
@@ -2813,7 +2820,7 @@ input:checked + .toggle-slider:before {
 	justify-content: center;
 	width: 28px;
 	height: 28px;
-	margin-bottom: 4px;
+	margin-bottom: 2px;
 }
 
 /* Make all icons the same size - including new ones */
@@ -2827,6 +2834,9 @@ input:checked + .toggle-slider:before {
 .lucide-badge-japanese-yen,
 .lucide-gem,
 .lucide-heart,
+.bi-shield,
+.bi-wind,
+.bi-fire,
 .stat-icon svg {
 	width: 24px !important;
 	height: 24px !important;
@@ -2843,59 +2853,184 @@ input:checked + .toggle-slider:before {
 	color: var(--light);
 	line-height: 1.2;
 	white-space: nowrap;
+	margin-top: 2px;
 }
 
-/* Different colors for different boards - Icons */
-.champion-card[data-board="1"] .stat-icon,
-.champion-card[data-board="1"] .lucide-biceps-flexed,
-.champion-card[data-board="1"] .lucide-badge-japanese-yen,
-.champion-card[data-board="1"] .lucide-gem,
-.champion-card[data-board="1"] .lucide-heart {
+/* Fixed icon colors */
+.lucide-biceps-flexed {
+	color: #ff0000 !important;
+	filter: drop-shadow(0 0 3px rgba(255, 0, 0, 0.5));
+}
+
+.lucide-Sword {
+	color: #00ff00 !important;
+	filter: drop-shadow(0 0 3px rgba(0, 255, 0, 0.5));
+}
+
+.bi-shield {
+	color: #0066ff !important; /* Bright blue */
+	filter: drop-shadow(0 0 3px rgba(0, 102, 255, 0.5));
+}
+
+.bi-fire {
+	color: #ff44cc !important; /* Pink */
+	filter: drop-shadow(0 0 3px rgba(255, 68, 204, 0.5));
+}
+
+.bi-wind {
+	color: #ff6600 !important; /* Orange */
+	filter: drop-shadow(0 0 3px rgba(255, 102, 0, 0.5));
+}
+
+/* Stat name colors - match their icons */
+.stat-item:has(.lucide-biceps-flexed) .stat-name {
+	color: #ff0000;
+}
+
+.stat-item:has(.lucide-Sword) .stat-name {
+	color: #00ff00;
+}
+
+.stat-item:has(.bi-shield) .stat-name {
+	color: #0066ff;
+}
+
+.stat-item:has(.bi-fire) .stat-name {
+	color: #ff44cc;
+}
+
+.stat-item:has(.bi-wind) .stat-name {
+	color: #ff6600;
+}
+
+/* Board-specific colors for yen/gem/heart names */
+.champion-card[data-board="1"] .stat-item:has(.lucide-badge-japanese-yen) .stat-name,
+.champion-card[data-board="1"] .stat-item:has(.lucide-gem) .stat-name,
+.champion-card[data-board="1"] .stat-item:has(.lucide-heart) .stat-name {
 	color: var(--cyber-blue);
-	filter: drop-shadow(0 0 3px var(--cyber-blue-glow));
 }
 
-.champion-card[data-board="2"] .stat-icon,
-.champion-card[data-board="2"] .lucide-biceps-flexed,
-.champion-card[data-board="2"] .lucide-badge-japanese-yen,
-.champion-card[data-board="2"] .lucide-gem,
-.champion-card[data-board="2"] .lucide-heart {
+.champion-card[data-board="2"] .stat-item:has(.lucide-badge-japanese-yen) .stat-name,
+.champion-card[data-board="2"] .stat-item:has(.lucide-gem) .stat-name,
+.champion-card[data-board="2"] .stat-item:has(.lucide-heart) .stat-name {
 	color: var(--cyber-purple);
-	filter: drop-shadow(0 0 3px var(--cyber-purple-glow));
 }
 
-.champion-card[data-board="3"] .stat-icon,
-.champion-card[data-board="3"] .lucide-biceps-flexed,
-.champion-card[data-board="3"] .lucide-badge-japanese-yen,
-.champion-card[data-board="3"] .lucide-gem,
-.champion-card[data-board="3"] .lucide-heart {
+.champion-card[data-board="3"] .stat-item:has(.lucide-badge-japanese-yen) .stat-name,
+.champion-card[data-board="3"] .stat-item:has(.lucide-gem) .stat-name,
+.champion-card[data-board="3"] .stat-item:has(.lucide-heart) .stat-name {
 	color: var(--cyber-pink);
-	filter: drop-shadow(0 0 3px var(--cyber-pink-glow));
 }
 
-/* Different colors for different boards - Borders */
+/* Different colors for different boards - Borders (normal state) */
 .champion-card[data-board="1"] .stat-item {
 	border-color: rgba(0, 243, 255, 0.3);
 }
-.champion-card[data-board="1"] .stat-item:hover {
-	border-color: var(--cyber-blue);
-	box-shadow: 0 0 10px var(--cyber-blue-glow);
-}
-
 .champion-card[data-board="2"] .stat-item {
 	border-color: rgba(157, 0, 255, 0.3);
 }
-.champion-card[data-board="2"] .stat-item:hover {
-	border-color: var(--cyber-purple);
-	box-shadow: 0 0 10px var(--cyber-purple-glow);
-}
-
 .champion-card[data-board="3"] .stat-item {
 	border-color: rgba(255, 0, 128, 0.3);
 }
+
+/* HOVER EFFECTS - Border matches icon color */
+
+/* Biceps hover - red border */
+.stat-item:has(.lucide-biceps-flexed):hover {
+	border-color: #ff0000 !important;
+	box-shadow: 0 0 15px rgba(255, 0, 0, 0.5);
+}
+
+/* Sword hover - green border */
+.stat-item:has(.lucide-Sword):hover {
+	border-color: #00ff00 !important;
+	box-shadow: 0 0 15px rgba(0, 255, 0, 0.5);
+}
+
+/* Shield hover - blue border */
+.stat-item:has(.bi-shield):hover {
+	border-color: #0066ff !important;
+	box-shadow: 0 0 15px rgba(0, 102, 255, 0.5);
+}
+
+/* Chakra hover - pink border */
+.stat-item:has(.bi-fire):hover {
+	border-color: #ff44cc !important;
+	box-shadow: 0 0 15px rgba(255, 68, 204, 0.5);
+}
+
+/* Agility hover - orange border (yellow on hover) */
+.stat-item:has(.bi-wind):hover {
+	border-color: #ffff00 !important;
+	box-shadow: 0 0 15px rgba(255, 255, 0, 0.5);
+}
+
+/* Yen/Gem/Heart hover - board-specific colors */
+.champion-card[data-board="1"] .stat-item:has(.lucide-badge-japanese-yen):hover,
+.champion-card[data-board="1"] .stat-item:has(.lucide-gem):hover,
+.champion-card[data-board="1"] .stat-item:has(.lucide-heart):hover {
+	border-color: var(--cyber-blue) !important;
+	box-shadow: 0 0 15px var(--cyber-blue-glow);
+}
+
+.champion-card[data-board="2"] .stat-item:has(.lucide-badge-japanese-yen):hover,
+.champion-card[data-board="2"] .stat-item:has(.lucide-gem):hover,
+.champion-card[data-board="2"] .stat-item:has(.lucide-heart):hover {
+	border-color: var(--cyber-purple) !important;
+	box-shadow: 0 0 15px var(--cyber-purple-glow);
+}
+
+.champion-card[data-board="3"] .stat-item:has(.lucide-badge-japanese-yen):hover,
+.champion-card[data-board="3"] .stat-item:has(.lucide-gem):hover,
+.champion-card[data-board="3"] .stat-item:has(.lucide-heart):hover {
+	border-color: var(--cyber-pink) !important;
+	box-shadow: 0 0 15px var(--cyber-pink-glow);
+}
+
+/* Icon hover effects - brighter */
+.stat-item:hover .lucide-biceps-flexed {
+	color: #ff3333 !important;
+	filter: drop-shadow(0 0 8px rgba(255, 0, 0, 0.9));
+	transform: scale(1.1);
+}
+
+.stat-item:hover .lucide-Sword {
+	color: #33ff33 !important;
+	filter: drop-shadow(0 0 8px rgba(0, 255, 0, 0.9));
+	transform: scale(1.1);
+}
+
+.stat-item:hover .bi-shield {
+	color: #3388ff !important;
+	filter: drop-shadow(0 0 8px rgba(0, 102, 255, 0.9));
+	transform: scale(1.1);
+}
+
+.stat-item:hover .bi-fire {
+	color: #ff66dd !important;
+	filter: drop-shadow(0 0 8px rgba(255, 68, 204, 0.9));
+	transform: scale(1.1);
+}
+
+.stat-item:hover .bi-wind {
+	color: #ffff00 !important;
+	filter: drop-shadow(0 0 8px rgba(255, 255, 0, 0.9));
+	transform: scale(1.1);
+}
+
+.stat-item:hover .lucide-badge-japanese-yen,
+.stat-item:hover .lucide-gem,
+.stat-item:hover .lucide-heart {
+	filter: brightness(1.3) drop-shadow(0 0 8px currentColor);
+	transform: scale(1.1);
+}
+
+/* Remove old border hover rules */
+.champion-card[data-board="1"] .stat-item:hover,
+.champion-card[data-board="2"] .stat-item:hover,
 .champion-card[data-board="3"] .stat-item:hover {
-	border-color: var(--cyber-pink);
-	box-shadow: 0 0 10px var(--cyber-pink-glow);
+	/* These are now handled by individual stat hover rules */
+	transform: translateY(-2px);
 }
 
 /* Container for stats to control spacing */
@@ -2911,8 +3046,12 @@ input:checked + .toggle-slider:before {
 	.stat-item {
 		min-width: 60px;
 		width: 60px;
-		height: 65px;
-		padding: 6px 2px;
+		height: 75px;
+		padding: 6px 2px 2px 2px;
+	}
+
+	.stat-name {
+		font-size: 0.55rem;
 	}
 
 	.stat-icon svg,
@@ -2925,6 +3064,9 @@ input:checked + .toggle-slider:before {
 	.lucide-badge-japanese-yen,
 	.lucide-gem,
 	.lucide-heart,
+	.bi-shield,
+	.bi-wind,
+	.bi-fire,
 	.stat-icon svg {
 		width: 20px !important;
 		height: 20px !important;
@@ -2944,6 +3086,6 @@ input:checked + .toggle-slider:before {
 	.stat-item {
 		min-width: 65px;
 		width: 65px;
-		height: 68px;
+		height: 80px;
 	}
 }
