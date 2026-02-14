@@ -5,7 +5,7 @@
 	"type": "array",
 	"items": {
 		"type": "object",
-		"required": ["name", "chance", "cost", "board", "desc"],
+		"required": ["name", "chance", "cost", "board", "desc", "stats"],
 		"properties": {
 			"name": {
 				"type": "string",
@@ -21,13 +21,410 @@
 			},
 			"board": {
 				"type": "integer",
-				"description": "Board number/category (1-3)",
-				"minimum": 1,
-				"maximum": 3
+				"description": "Board number/category (1-3)"
 			},
 			"desc": {
 				"type": "string",
 				"description": "Description of the champion's abilities and effects"
+			},
+			"stats": {
+				"type": "object",
+				"required": ["base", "modifiers"],
+				"properties": {
+					"base": {
+						"type": "object",
+						"properties": {
+							"strength": {
+								"type": "number",
+								"description": "Strength value"
+							},
+							"sword": {
+								"type": "number",
+								"description": "Sword value"
+							},
+							"durability": {
+								"type": "number",
+								"description": "Durability value"
+							},
+							"agility": {
+								"type": "number",
+								"description": "Agility and Speed value"
+							},
+							"chakra": {
+								"type": "number",
+								"description": "Chakra value"
+							}
+						},
+						"additionalProperties": false
+					},
+					"modifiers": {
+						"type": "object",
+						"properties": {
+							"punch": {
+								"type": "object",
+								"properties": {
+									"outgoing_damage_increase": {
+										"type": "number",
+										"description": "Outgoing damage increase percentage",
+										"minimum": 0,
+										"maximum": 1
+									}
+								},
+								"required": ["outgoing_damage_increase"],
+								"additionalProperties": false
+							},
+							"strength": {
+								"type": "object",
+								"properties": {
+									"incoming_damage_decrease": {
+										"type": "number",
+										"description": "Incoming damage decrease percentage",
+										"minimum": 0,
+										"maximum": 1
+									}
+								},
+								"required": ["incoming_damage_decrease"],
+								"additionalProperties": false
+							},
+							"chakra": {
+								"type": "object",
+								"properties": {
+									"outgoing_damage_multiplier": {
+										"type": "number",
+										"description": "Outgoing damage multiplier"
+									},
+									"outgoing_damage_increase": {
+										"type": "number",
+										"description": "Outgoing damage increase percentage",
+										"minimum": 0,
+										"maximum": 1
+									},
+									"incoming_damage_decrease": {
+										"type": "number",
+										"description": "Incoming damage decrease percentage"
+									}
+								},
+								"required": ["incoming_damage_decrease"],
+								"additionalProperties": false
+							},
+							"heal": {
+								"type": "object",
+								"properties": {
+									"heal_amount": {
+										"type": "number",
+										"description": "Heal amount",
+										"minimum": 0,
+										"maximum": 1
+									}
+								},
+								"required": ["heal_amount"],
+								"additionalProperties": false
+							},
+							"kagune": {
+								"type": "object",
+								"properties": {
+									"outgoing_damage_increase": {
+										"type": "number",
+										"description": "Outgoing damage increase percentage",
+										"minimum": 0,
+										"maximum": 1
+									},
+									"incoming_damage_decrease": {
+										"type": "number",
+										"description": "Incoming damage decrease percentage",
+										"minimum": 0,
+										"maximum": 1
+									}
+								},
+								"required": ["outgoing_damage_increase", "incoming_damage_decrease"],
+								"additionalProperties": false
+							},
+							"fruit": {
+								"type": "object",
+								"properties": {
+									"outgoing_damage_increase": {
+										"type": "number",
+										"description": "Outgoing damage increase percentage",
+										"minimum": 0,
+										"maximum": 1
+									},
+									"incoming_damage_decrease": {
+										"type": "number",
+										"description": "Incoming damage decrease percentage",
+										"minimum": 0,
+										"maximum": 1
+									}
+								},
+								"required": ["outgoing_damage_increase", "incoming_damage_decrease"],
+								"additionalProperties": false
+							},
+							"grimoire": {
+								"type": "object",
+								"properties": {
+									"outgoing_damage_increase": {
+										"type": "number",
+										"description": "Outgoing damage increase percentage",
+										"minimum": 0,
+										"maximum": 1
+									},
+									"incoming_damage_decrease": {
+										"type": "number",
+										"description": "Incoming damage decrease percentage",
+										"minimum": 0,
+										"maximum": 1
+									}
+								},
+								"required": ["outgoing_damage_increase", "incoming_damage_decrease"],
+								"additionalProperties": false
+							},
+							"sword_slash": {
+								"type": "object",
+								"properties": {
+									"outgoing_damage_increase": {
+										"type": "number",
+										"description": "Outgoing damage increase percentage",
+										"minimum": 0,
+										"maximum": 1
+									},
+									"incoming_damage_decrease": {
+										"type": "number",
+										"description": "Incoming damage decrease percentage",
+										"minimum": 0,
+										"maximum": 1
+									}
+								},
+								"required": ["outgoing_damage_increase", "incoming_damage_decrease"],
+								"additionalProperties": false
+							},
+							"quirk": {
+								"type": "object",
+								"properties": {
+									"outgoing_damage_increase": {
+										"type": "number",
+										"description": "Outgoing damage increase percentage",
+										"minimum": 0,
+										"maximum": 1
+									},
+									"incoming_damage_decrease": {
+										"type": "number",
+										"description": "Incoming damage decrease percentage",
+										"minimum": 0,
+										"maximum": 1
+									}
+								},
+								"required": ["outgoing_damage_increase", "incoming_damage_decrease"],
+								"additionalProperties": false
+							},
+							"stand": {
+								"type": "object",
+								"properties": {
+									"outgoing_damage_increase": {
+										"type": "number",
+										"description": "Outgoing damage increase percentage",
+										"minimum": 0,
+										"maximum": 1
+									},
+									"incoming_damage_decrease": {
+										"type": "number",
+										"description": "Incoming damage decrease percentage",
+										"minimum": 0,
+										"maximum": 1
+									}
+								},
+								"required": ["outgoing_damage_increase"],
+								"additionalProperties": false
+							},
+							"health_threshold": {
+								"type": "object",
+								"properties": {
+									"health_value": {
+										"type": "number",
+										"description": "Health threshold value",
+										"minimum": 0,
+										"maximum": 1
+									},
+									"outgoing_damage_increase": {
+										"type": "number",
+										"description": "Outgoing damage increase percentage when below threshold",
+										"minimum": 0,
+										"maximum": 1
+									},
+									"incoming_damage_decrease": {
+										"type": "number",
+										"description": "Incoming damage decrease percentage when below threshold",
+										"minimum": 0,
+										"maximum": 1
+									},
+									"immunity_duration": {
+										"type": "integer",
+										"description": "Immunity duration in seconds"
+									}
+								},
+								"required": ["health_value", "outgoing_damage_increase", "incoming_damage_decrease", "immunity_duration"],
+								"additionalProperties": false
+							},
+							"all_damage": {
+								"type": "object",
+								"properties": {
+									"outgoing_damage_increase": {
+										"type": "number",
+										"description": "Outgoing damage increase percentage",
+										"minimum": 0,
+										"maximum": 1
+									},
+									"incoming_damage_decrease": {
+										"type": "number",
+										"description": "Incoming damage decrease percentage",
+										"minimum": 0,
+										"maximum": 1
+									}
+								},
+								"required": ["outgoing_damage_increase", "incoming_damage_decrease"],
+								"additionalProperties": false
+							},
+							"kill_effect": {
+								"type": "object",
+								"properties": {
+									"outgoing_damage_multiplier": {
+										"type": "number",
+										"description": "Outgoing damage multiplier on kill"
+									},
+									"duration": {
+										"type": "number",
+										"description": "Duration in seconds"
+									}
+								},
+								"required": ["outgoing_damage_multiplier", "duration"],
+								"additionalProperties": false
+							},
+							"yen_income": {
+								"type": "object",
+								"properties": {
+									"increased_income_value": {
+										"type": "number",
+										"description": "Yen income increase value",
+										"minimum": 0,
+										"maximum": 1
+									}
+								},
+								"required": ["increased_income_value"],
+								"additionalProperties": false
+							},
+							"chikara_income": {
+								"type": "object",
+								"properties": {
+									"increased_income_value": {
+										"type": "number",
+										"description": "Chikara income increase value",
+										"minimum": 0,
+										"maximum": 1
+									}
+								},
+								"required": ["increased_income_value"],
+								"additionalProperties": false
+							},
+							"heart_income": {
+								"type": "object",
+								"properties": {
+									"increased_income_value": {
+										"type": "number",
+										"description": "Heart income increase value"
+									}
+								},
+								"required": ["increased_income_value"],
+								"additionalProperties": false
+							},
+							"incoming_damage": {
+								"type": "object",
+								"properties": {
+									"incoming_damage_decrease": {
+										"type": "number",
+										"description": "Incoming damage decrease percentage",
+										"minimum": 0,
+										"maximum": 1
+									}
+								},
+								"required": ["incoming_damage_decrease"],
+								"additionalProperties": false
+							},
+							"day_time": {
+								"type": "object",
+								"properties": {
+									"outgoing_damage_multiplier": {
+										"type": "number",
+										"description": "Outgoing damage multiplier during daytime"
+									},
+									"incoming_damage_decrease": {
+										"type": "number",
+										"description": "Incoming damage decrease during daytime",
+										"minimum": 0,
+										"maximum": 1
+									}
+								},
+								"required": ["outgoing_damage_multiplier", "incoming_damage_decrease"],
+								"additionalProperties": false
+							},
+							"outgoing_damage": {
+								"type": "object",
+								"properties": {
+									"outgoing_damage_decrease": {
+										"type": "number",
+										"description": "Outgoing damage decrease percentage"
+									}
+								},
+								"required": ["outgoing_damage_decrease"],
+								"additionalProperties": false
+							},
+							"stun_immunity": {
+								"type": "object",
+								"properties": {
+									"immunity_duration": {
+										"type": "number",
+										"description": "Stun immunity duration in seconds",
+										"minimum": 0,
+										"maximum": 1
+									}
+								},
+								"required": ["immunity_duration"],
+								"additionalProperties": false
+							},
+							"bloodline": {
+								"type": "object",
+								"properties": {
+									"outgoing_damage_increase": {
+										"type": "number",
+										"description": "Outgoing damage increase percentage",
+										"minimum": 0,
+										"maximum": 1
+									}
+								},
+								"required": ["outgoing_damage_increase"],
+								"additionalProperties": false
+							},
+							"kurama": {
+								"type": "object",
+								"properties": {
+									"outgoing_damage_increase": {
+										"type": "number",
+										"description": "Outgoing damage increase percentage",
+										"minimum": 0,
+										"maximum": 1
+									},
+									"drop_chance_increase": {
+										"type": "number",
+										"description": "Kurama drop chance increase percentage",
+										"minimum": 0,
+										"maximum": 1
+									}
+								},
+								"required": ["outgoing_damage_increase", "drop_chance_increase"],
+								"additionalProperties": false
+							}
+						},
+						"additionalProperties": false
+					}
+				},
+				"additionalProperties": false
 			}
 		},
 		"additionalProperties": false
