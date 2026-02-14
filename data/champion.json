@@ -155,7 +155,7 @@
 		"chance": "4.06%",
 		"cost": "7500 SHARDS",
 		"board": 1,
-		"desc": "Auto trains 40% of your strength multiplier every 4 seconds. Specially buffs Quark damage by 25% nerfs incoming Quark damage by 20%",
+		"desc": "Auto trains 40% of your strength multiplier every 4 seconds. Specially buffs Quirk damage by 25% nerfs incoming Quirk damage by 20%",
 		"stats": {
 			"base": {
 				"strength": 0.4
@@ -377,7 +377,7 @@
 	},
 	{
 		"name": "GOJO",
-		"chance": "0.0031%",
+		"chance": "0.031%",
 		"cost": "7500 SHARDS",
 		"board": 1,
 		"desc": "Auto trains 125% Durability. Nerfs all player damage by 50% buffs all damage by 25% and increases your Chikara Per Min by x1.5",
@@ -522,7 +522,7 @@
 		"chance": "3.12%",
 		"cost": "1500 SHARDS",
 		"board": 2,
-		"desc": "Trains 95% Strength and 85% Durability. Buffs all damage by 30%. Nerfs all Quarks by an additional 50%",
+		"desc": "Trains 95% Strength and 85% Durability. Buffs all damage by 30%. Nerfs all Quirks by an additional 50%",
 		"stats": {
 			"base": {
 				"strength": 0.95,
@@ -545,7 +545,7 @@
 		"chance": "1.83%",
 		"cost": "2250 SHARDS",
 		"board": 2,
-		"desc": "Trains 60% Sword 50% Durability and 45% Strength he doubles all your damage and nerf all incomimg damage by 50% when it's day time",
+		"desc": "Trains 60% Sword 50% Durability and 45% Strength he doubles all your damage and nerf all incoming damage by 50% when it's day time",
 		"stats": {
 			"base": {
 				"sword": 0.6,

@@ -90,6 +90,11 @@
 			"type": "update",
 			"timestamp": 1770920384045,
 			"list": ["Improved UI and Mute toggle button for Mobile users."]
+		},
+		{
+			"type": "update",
+			"timestamp": 1771098021915,
+			"list": ["Improved sorting on Champions Ascending, Descending."]
 		}
 	]
 }
