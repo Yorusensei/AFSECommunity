@@ -340,7 +340,7 @@
 			"modifiers": {
 				"kill_effect": {
 					"outgoing_damage_multiplier": 0.8,
-					"duration": 0
+					"duration": 20
 				},
 				"all_damage": {
 					"outgoing_damage_increase": 0.5,
@@ -512,7 +512,7 @@
 			},
 			"modifiers": {
 				"chakra": {
-					"incoming_damage_decrease": 2.0
+					"outgoing_damage_multiplier": 2.0
 				}
 			}
 		}
@@ -565,7 +565,7 @@
 		"chance": "0.44%",
 		"cost": "3200 SHARDS",
 		"board": 2,
-		"desc": "A strength oriented Champion by training 90% of Strenght and 80% of Durability Overall he nerfs all damage by 50% and buffs al outgoing damage by 35%",
+		"desc": "A strength oriented Champion by training 90% of Strength and 80% of Durability Overall he nerfs all damage by 50% and buffs all outgoing damage by 35%",
 		"stats": {
 			"base": {
 				"strength": 0.9,
@@ -577,7 +577,7 @@
 					"incoming_damage_decrease": 0.5
 				},
 				"outgoing_damage": {
-					"outgoing_damage_decrease": -0.35
+					"outgoing_damage_increase": 0.35
 				}
 			}
 		}

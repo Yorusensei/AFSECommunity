@@ -104,7 +104,6 @@
 										"description": "Incoming damage decrease percentage"
 									}
 								},
-								"required": ["incoming_damage_decrease"],
 								"additionalProperties": false
 							},
 							"heal": {
@@ -220,13 +219,11 @@
 								"properties": {
 									"outgoing_damage_increase": {
 										"type": "number",
-										"description": "Outgoing damage increase percentage",
 										"minimum": 0,
 										"maximum": 1
 									},
 									"incoming_damage_decrease": {
 										"type": "number",
-										"description": "Incoming damage decrease percentage",
 										"minimum": 0,
 										"maximum": 1
 									}
@@ -367,12 +364,12 @@
 							"outgoing_damage": {
 								"type": "object",
 								"properties": {
-									"outgoing_damage_decrease": {
+									"outgoing_damage_increase": {
 										"type": "number",
-										"description": "Outgoing damage decrease percentage"
+										"description": "Outgoing damage increase percentage"
 									}
 								},
-								"required": ["outgoing_damage_decrease"],
+								"required": ["outgoing_damage_increase"],
 								"additionalProperties": false
 							},
 							"stun_immunity": {
