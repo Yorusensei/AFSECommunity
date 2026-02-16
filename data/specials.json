@@ -210,7 +210,7 @@
 		},
 		{
 			"name": "BUDDHA / SENGOKU'S DF",
-			"abilities": ["Z - Chakra, 35x Multiplier/10 Ticks, 7s CD.", "X - Chakra, 25x Multiplier, 9s CD.", "C - Chakra, 45x Multiplier/7 Ticks, 15s CD."]
+			"abilities": ["Z - Chakra, 40x Multiplier, 7s CD.", "X - Chakra, 60x Multiplier, 9s CD.", "C - Chakra, 15x Multiplier, 15s CD."]
 		}
 	]
 }
