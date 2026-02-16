@@ -9,7 +9,7 @@ export function backgroundMusic() {
 	const id = generateUniqueId();
 	$(`#${audioContainerId}`).append(/*html*/ `
         <audio id="${id}" loop>
-            <source src="./audio/Ixora Ignition.mp3" type="audio/mpeg">
+            <source src="./audio/ANBURAT.mp3" type="audio/mpeg">
         </audio>`);
 
 	const muteButtonId = generateUniqueId();

@@ -178,7 +178,7 @@ export default {
                     <div class="cyber-card">
                         <h2 class="text-xl font-bold mb-4 text-glow-blue">ACTIVE STATUS</h2>
                         <p class="terminal-text text-uppercase mb-4">&gt; Welcome to AFSE Community Guidelines Resource Hub</p>
-                        <p class="mb-4">Ixora's Contribution to AFSE | Resource calculators and databases are online and ready for analysis.</p>
+                        <p class="mb-4">ANBU's Contribution to AFSE | Resource calculators and databases are online and ready for analysis.</p>
                         <div class="flex gap-2 mt-4">
                             <span class="cyber-badge badge-blue opacity-100">LATEST UPDATES</span>
                             <span class="cyber-badge badge-green opacity-100">v${data.version}</span>

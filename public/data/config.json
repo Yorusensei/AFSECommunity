@@ -95,6 +95,11 @@
 			"type": "update",
 			"timestamp": 1771098021915,
 			"list": ["Improved sorting on Champions Ascending, Descending."]
+		},
+		{
+			"type": "update",
+			"timestamp": 1771270715571,
+			"list": ["Changed Background music & Logos."]
 		}
 	]
 }
