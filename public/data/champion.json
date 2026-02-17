@@ -273,7 +273,7 @@
 		"chance": "0.68%",
 		"cost": "7500 SHARDS",
 		"board": 1,
-		"desc": "Auto trains 305 of your Chakra, 50% strength and Durability multiplier ever 4 seconds. Nerfs all damage by 30% and buffs all damage by 20%",
+		"desc": "Auto trains 30% of your Chakra, 50% strength and Durability multiplier ever 4 seconds. Nerfs all damage by 30% and buffs all damage by 20%",
 		"stats": {
 			"base": {
 				"chakra": 0.3,
@@ -830,7 +830,7 @@
 		"chance": "0.01%",
 		"cost": "EVENT ONLY",
 		"board": 3,
-		"desc": "Auto trains 175% of your Chakra, Buffs Kurama damage by 1.5x and Kurama drop chances by 1.5x increases your Yen Per Min by x1.05.",
+		"desc": "Auto trains 175% of your Chakra, Buffs Kurama damage by 2.5x and Kurama drop chances by 2x increases your Yen Per Min by x1.15.",
 		"stats": {
 			"base": {
 				"chakra": 1.75
