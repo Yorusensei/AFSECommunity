@@ -331,6 +331,17 @@
 								"required": ["increased_income_value"],
 								"additionalProperties": false
 							},
+							"event_income": {
+								"type": "object",
+								"properties": {
+									"increased_income_value": {
+										"type": "number",
+										"description": "Event currency increase value"
+									}
+								},
+								"required": ["increased_income_value"],
+								"additionalProperties": false
+							},
 							"incoming_damage": {
 								"type": "object",
 								"properties": {

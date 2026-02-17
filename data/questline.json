@@ -448,5 +448,84 @@
 			"requirement": "1SP Sword and Durability.",
 			"reward": " 300k Hearts, 15 Hour Self Boost."
 		}
+	],
+	"erza": [
+		{
+			"quest": 1,
+			"requirement": "Defeat 10 Makima.",
+			"reward": "300k Hearts."
+		},
+		{
+			"quest": 2,
+			"requirement": "Defeat 50 Mini Bosses.",
+			"reward": "100k Chikara."
+		},
+		{
+			"quest": 3,
+			"requirement": "Gain 1QN Strength, Durability, Chakra ",
+			"reward": "400M Yen."
+		},
+		{
+			"quest": 4,
+			"requirement": "Gain 5k Increments Of Durability.",
+			"reward": "100k Chikara."
+		},
+		{
+			"quest": 5,
+			"requirement": "Defeat 1000 NPC's.",
+			"reward": "12h Self Boost."
+		},
+		{
+			"quest": 6,
+			"requirement": " Defeat 250 Mini Bosses ",
+			"reward": "200k Chikara"
+		},
+		{
+			"quest": 7,
+			"requirement": "Gain 1Sx Strength, Durability and Chakra.",
+			"reward": "25B Yen."
+		},
+		{
+			"quest": 8,
+			"requirement": "Gain 10k Increments Of Durability.",
+			"reward": "250k Chikara."
+		},
+		{
+			"quest": 9,
+			"requirement": "Defeat 2500 NPC's.",
+			"reward": "1 Day Self Boost."
+		},
+		{
+			"quest": 10,
+			"requirement": "Defeat 1000 Rias",
+			"reward": "Erza Champion."
+		}
+	],
+	"rias": [
+		{
+			"quest": 1,
+			"requirement": "Defeat 250 Rias.",
+			"reward": "300k Hearts."
+		},
+		{
+			"quest": 2,
+			"requirement": "Defeat 1000 NPC's",
+			"reward": "2 Hours Self Boost, 300k Chocolates."
+		},
+		{
+			"quest": 3,
+			"requirement": "Defeat 500 Rias.",
+			"reward": "4 Hours Self Boost, 300k Chocolates."
+		},
+		{
+			"quest": 4,
+			"requirement": " Defeat 4000 NPC's",
+			"reward": "8 Hours Self Boost, 500k Chocolates."
+		},
+		{
+			"quest": 5,
+			"requirement": "Defeat 1000 Rias.",
+			"reward": "16 Hours Self Boost, 500k Chocolates."
+		}
 	]
 }

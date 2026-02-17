@@ -916,7 +916,7 @@
 		"chance": "0.005%",
 		"cost": "EVENT ONLY",
 		"board": 3,
-		"desc": "Auto trains 175% of your Durability, increases your Yen Per Min by x1.15, increases your Heart Per Min by x2.5",
+		"desc": "Auto trains 175% of your Durability, increases your Yen Per Min by x1.15, increases your Heart Per Min by x2.5, While unequipped until provides to x1.25 all Event Currency.",
 		"stats": {
 			"base": {
 				"durability": 1.75
@@ -927,6 +927,9 @@
 				},
 				"heart_income": {
 					"increased_income_value": 1.5
+				},
+				"event_income": {
+					"increased_income_value": 0.25
 				}
 			}
 		}

@@ -1,5 +1,5 @@
 {
-	"version": "4.75",
+	"version": "4.8",
 	"changelog": [
 		{
 			"type": "removed",
@@ -100,6 +100,11 @@
 			"type": "update",
 			"timestamp": 1771270715571,
 			"list": ["Changed Background music & Logos."]
+		},
+		{
+			"type": "added",
+			"timestamp": 1771355976163,
+			"list": ["Added new champion and questlines."]
 		}
 	]
 }
