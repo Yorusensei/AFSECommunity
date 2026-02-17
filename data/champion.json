@@ -273,7 +273,7 @@
 		"chance": "0.68%",
 		"cost": "7500 SHARDS",
 		"board": 1,
-		"desc": "Auto trains 305 of your Chakra, 50% strength and Durability multiplier ever 4 seconds. Nerfs all damage by 30% and buffs all damage by 20%",
+		"desc": "Auto trains 30% of your Chakra, 50% strength and Durability multiplier ever 4 seconds. Nerfs all damage by 30% and buffs all damage by 20%",
 		"stats": {
 			"base": {
 				"chakra": 0.3,
@@ -830,7 +830,7 @@
 		"chance": "0.01%",
 		"cost": "EVENT ONLY",
 		"board": 3,
-		"desc": "Auto trains 175% of your Chakra, Buffs Kurama damage by 1.5x and Kurama drop chances by 1.5x increases your Yen Per Min by x1.05.",
+		"desc": "Auto trains 175% of your Chakra, Buffs Kurama damage by 2.5x and Kurama drop chances by 2x increases your Yen Per Min by x1.15.",
 		"stats": {
 			"base": {
 				"chakra": 1.75
@@ -912,6 +912,26 @@
 		}
 	},
 	{
+		"name": "RIAS",
+		"chance": "0.005%",
+		"cost": "EVENT ONLY",
+		"board": 3,
+		"desc": "Auto trains 175% of your Durability, increases your Yen Per Min by x1.15, increases your Heart Per Min by x2.5",
+		"stats": {
+			"base": {
+				"durability": 1.75
+			},
+			"modifiers": {
+				"yen_income": {
+					"increased_income_value": 0.15
+				},
+				"heart_income": {
+					"increased_income_value": 1.5
+				}
+			}
+		}
+	},
+	{
 		"name": "ESDEATH",
 		"chance": "0.01%",
 		"cost": "EVENT ONLY",
@@ -928,6 +948,26 @@
 				},
 				"heart_income": {
 					"increased_income_value": 1.0
+				}
+			}
+		}
+	},
+	{
+		"name": "ALICE",
+		"chance": "0.004%",
+		"cost": "EVENT ONLY",
+		"board": 3,
+		"desc": "Auto trains 200% of your Sword, increases your Yen Per Min by x1.25, increases your Heart Per Min by x2.5",
+		"stats": {
+			"base": {
+				"sword": 2
+			},
+			"modifiers": {
+				"yen_income": {
+					"increased_income_value": 0.25
+				},
+				"heart_income": {
+					"increased_income_value": 1.5
 				}
 			}
 		}
