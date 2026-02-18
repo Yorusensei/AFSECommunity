@@ -913,7 +913,7 @@
 	},
 	{
 		"name": "RIAS",
-		"chance": "0.005%",
+		"chance": "0.0005%",
 		"cost": "EVENT ONLY",
 		"board": 3,
 		"desc": "Auto trains 175% of your Durability, increases your Yen Per Min by x1.15, increases your Heart Per Min by x2.5, While unequipped until provides to x1.25 all Event Currency.",
