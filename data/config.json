@@ -1,5 +1,5 @@
 {
-	"version": "4.8",
+	"version": "4.8.1",
 	"changelog": [
 		{
 			"type": "removed",
@@ -105,6 +105,11 @@
 			"type": "added",
 			"timestamp": 1771355976163,
 			"list": ["Added new champion and questlines."]
+		},
+		{
+			"type": "added",
+			"timestamp": 1771425198813,
+			"list": ["Added new codes."]
 		}
 	]
 }
