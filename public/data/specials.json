@@ -211,6 +211,40 @@
 		{
 			"name": "BUDDHA / SENGOKU'S DF",
 			"abilities": ["Z - Chakra, 40x Multiplier, 7s CD.", "X - Chakra, 60x Multiplier, 9s CD.", "C - Chakra, 15x Multiplier, 15s CD."]
+		},
+		{
+			"name": "ICE / AOKIJI'S DF",
+			"abilities": [
+				"Z - Chakra, 35x Multiplier + 8.5x Burn Damage 4 Ticks, 6s CD.",
+				"X - Chakra, 35x Multiplier + 8.5x Burn Damage + 5 Ticks, 10s CD.",
+				"C - Chakra, 45x Multiplier + 11.2x Burn Damage, 15s CD."
+			]
+		}
+	],
+	"breathing forms": [
+		{
+			"name": "THUNDER FORM / ZENITSU STYLE",
+			"abilities": [
+				"Z - Sword, 270x Multiplier + 45x Burn Damage + 3 Ticks, 6s CD",
+				"X - Sword, 8x Multiplier + 5x Burn Damage + 3 Ticks, 6s CD",
+				"C - Sword, 45x Multiplier with 8 Ticks + 8.5 Burn Damage + 3 Ticks, 10s CD."
+			]
+		},
+		{
+			"name": "FLAME / RENGOKU STYLE",
+			"abilities": [
+				"Z - Sword, 270x Multiplier + 65x Burn Damage + 3 Ticks, 7.3s CD",
+				"X - Sword, 8x Multiplier + 1.3x Burn Damage + 6 Ticks, 6.3s CD",
+				"C - Sword, 45x Multiplier with 8 Ticks + 11 Burn Damage + 3 Ticks, 10.3s CD."
+			]
+		},
+		{
+			"name": "WATER / GIYU STYLE",
+			"abilities": [
+				"Z - Sword, 270x Multiplier + 45x Burn Damage + 3 Ticks, 7.3s CD",
+				"X - Sword, 10x Multiplier + 2.5x Burn Damage + 3 Ticks, 6.3s CD",
+				"C - Sword, 45x Multiplier, 10.3s CD."
+			]
 		}
 	]
 }

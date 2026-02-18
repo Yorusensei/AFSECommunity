@@ -935,6 +935,26 @@
 		}
 	},
 	{
+		"name": "ERZA",
+		"chance": "ERZA QUEST",
+		"cost": "EVENT ONLY",
+		"board": 3,
+		"desc": "Auto trains 175% of your Durability, increases your Yen Per Min by x1.15, increases your Heart Per Min by x2.",
+		"stats": {
+			"base": {
+				"durability": 1.75
+			},
+			"modifiers": {
+				"yen_income": {
+					"increased_income_value": 0.15
+				},
+				"heart_income": {
+					"increased_income_value": 1
+				}
+			}
+		}
+	},
+	{
 		"name": "ESDEATH",
 		"chance": "0.01%",
 		"cost": "EVENT ONLY",
@@ -971,6 +991,27 @@
 				},
 				"heart_income": {
 					"increased_income_value": 1.5
+				}
+			}
+		}
+	},
+	{
+		"name": "Whitebeard",
+		"chance": "Tier 1 - 1% | Tier 2 - 2.5% | Tier 3 - 5%",
+		"cost": "EVENT ONLY",
+		"board": 3,
+		"desc": "Auto trains 160% of your Strength, 175% of your Durability increases your Yen Per Min by x1.2, increases your Heart Per Min by x2.",
+		"stats": {
+			"base": {
+				"durability": 1.75,
+				"strength": 1.6
+			},
+			"modifiers": {
+				"yen_income": {
+					"increased_income_value": 0.2
+				},
+				"heart_income": {
+					"increased_income_value": 1
 				}
 			}
 		}

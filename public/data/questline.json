@@ -420,6 +420,36 @@
 			"quest": 11,
 			"requirement": "Defeat 75 Kurama",
 			"reward": "New Champion (NAMI), +5 Champion Inventory Slots (F2P)."
+		},
+		{
+			"quest": 12,
+			"requirement": "Defeat 2500 NPC's",
+			"reward": "150k Chikara."
+		},
+		{
+			"quest": 13,
+			"requirement": "Defeat 1000 Rias.",
+			"reward": "2.5M Chocolates."
+		},
+		{
+			"quest": 14,
+			"requirement": "Gain 20k Increments of Strength, Durability, Chakra.",
+			"reward": "1 Day Self Boost."
+		},
+		{
+			"quest": 15,
+			"requirement": "Defeat 1000 Rias.",
+			"reward": "2.5M Chocolates."
+		},
+		{
+			"quest": 16,
+			"requirement": "Defeat 5000 NPC's",
+			"reward": "250k Chikara."
+		},
+		{
+			"quest": 17,
+			"requirement": "Defeat 100 Kurama",
+			"reward": "Clima Tact Awakened Artifact"
 		}
 	],
 	"esdeath": [
@@ -526,6 +556,33 @@
 			"quest": 5,
 			"requirement": "Defeat 1000 Rias.",
 			"reward": "16 Hours Self Boost, 500k Chocolates."
+		}
+	],
+	"alice": [
+		{
+			"quest": 1,
+			"requirement": "Defeat 1000 NPC's.",
+			"reward": "3 Hours Self Boost, 300k Chocolates."
+		},
+		{
+			"quest": 2,
+			"requirement": "Defeat 1 Whitebeard.",
+			"reward": "6 Hours Self Boost, 300k Chocolates."
+		},
+		{
+			"quest": 3,
+			"requirement": "Defeat 5000 NPC's",
+			"reward": "8 Hours Self Boost, 600k Chocolates."
+		},
+		{
+			"quest": 4,
+			"requirement": "Defeat 1000 Esdeath.",
+			"reward": "12 Hours Self Boost, 1M Chocolates."
+		},
+		{
+			"quest": 5,
+			"requirement": "Defeat 500 Mini Bosses.",
+			"reward": "3 Days Self Boost."
 		}
 	]
 }
