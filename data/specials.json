@@ -225,24 +225,24 @@
 		{
 			"name": "THUNDER FORM / ZENITSU STYLE",
 			"abilities": [
-				"Z - Sword, 270x Multiplier + 45x Burn Damage + 3 Ticks, 6s CD",
-				"X - Sword, 8x Multiplier + 5x Burn Damage + 3 Ticks, 6s CD",
-				"C - Sword, 45x Multiplier with 8 Ticks + 8.5 Burn Damage + 3 Ticks, 10s CD."
+				"Z - Strength, 270x Multiplier + 45x Burn Damage + 3 Ticks, 6s CD",
+				"X - Chakra, 8x Multiplier + 5x Burn Damage + 3 Ticks, 6s CD",
+				"C - Strength, 45x Multiplier with 8 Ticks + 8.5 Burn Damage + 3 Ticks, 10s CD."
 			]
 		},
 		{
 			"name": "FLAME / RENGOKU STYLE",
 			"abilities": [
-				"Z - Sword, 270x Multiplier + 65x Burn Damage + 3 Ticks, 7.3s CD",
-				"X - Sword, 8x Multiplier + 1.3x Burn Damage + 6 Ticks, 6.3s CD",
+				"Z - Strength, 270x Multiplier + 65x Burn Damage + 3 Ticks, 7.3s CD",
+				"X - Chakra, 8x Multiplier + 1.3x Burn Damage + 6 Ticks, 6.3s CD",
 				"C - Sword, 45x Multiplier with 8 Ticks + 11 Burn Damage + 3 Ticks, 10.3s CD."
 			]
 		},
 		{
 			"name": "WATER / GIYU STYLE",
 			"abilities": [
-				"Z - Sword, 270x Multiplier + 45x Burn Damage + 3 Ticks, 7.3s CD",
-				"X - Sword, 10x Multiplier + 2.5x Burn Damage + 3 Ticks, 6.3s CD",
+				"Z - Strength, 270x Multiplier + 45x Burn Damage + 3 Ticks, 7.3s CD",
+				"X - Chakra, 10x Multiplier + 2.5x Burn Damage + 3 Ticks, 6.3s CD",
 				"C - Sword, 45x Multiplier, 10.3s CD."
 			]
 		}
