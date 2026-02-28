@@ -57,6 +57,10 @@
 		{
 			"name": "HELL FLAME / ENDEAVOR QUIRK",
 			"abilities": ["Z - Chakra, 25x Multiplier", "X - Chakra, 35x Multiplier", "C - Chakra, 55x Multiplier"]
+		},
+		{
+			"name": "JET / TORINO QUIRK",
+			"abilities": ["Z - Chakra, 35x Multiplier, 3.5s CD.", "X - Speed, Improve movement speed, 8s CD.", "C - Chakra, 55x Multiplier 6s CD."]
 		}
 	],
 	"grimoires": [
@@ -79,6 +83,10 @@
 		{
 			"name": "TREE GRIMOIRE / VANGEANCE GRIMOIRE",
 			"abilities": ["Z - Chakra, 15x Multiplier", "X - No Damage, Holds Players in place", "C - Chakra, 25x Multiplier"]
+		},
+		{
+			"name": "DARK GRIMOIRE / YAMI GRIMOIRE",
+			"abilities": ["Z - Strength, 20x Multiplier", "X - Strength, 30x Multiplier/4 Ticks", "C - Strength, 35x Multiplier"]
 		}
 	],
 	"stands": [
