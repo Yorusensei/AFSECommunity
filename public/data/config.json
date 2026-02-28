@@ -110,6 +110,11 @@
 			"type": "added",
 			"timestamp": 1771425198813,
 			"list": ["Added new codes."]
+		},
+		{
+			"type": "added",
+			"timestamp": 1772314895816,
+			"list": ["Added Artifacts on Yen calculator."]
 		}
 	]
 }

@@ -69,6 +69,18 @@ const inputKeys = [
 	},
 ] as const;
 
+const yenBonusOptions = Array.from({ length: 25 }, (_, i) => {
+	const level = i + 1;
+
+	const bonus = 0.05 + (i * 0.05) / 24;
+
+	const multiplier = 1 + bonus;
+	return {
+		label: `LEVEL ${level}`,
+		value: multiplier.toString(),
+	};
+});
+
 const selectKeys = [
 	{
 		label: "RANK MULTIPLIER",
@@ -93,6 +105,11 @@ const selectKeys = [
 		...selectClasses,
 	},
 	{
+		label: "ARTIFACT LEVEL",
+		selectOptions: yenBonusOptions,
+		...selectClasses,
+	},
+	{
 		label: "HERO MULTIPLIER",
 		selectOptions: [
 			{ label: "NONE (1x)", value: "1" },
@@ -102,6 +119,15 @@ const selectKeys = [
 			{ label: "B (1.2x)", value: "1.2" },
 			{ label: "A (1.25x)", value: "1.25" },
 			{ label: "S (1.3x)", value: "1.3" },
+		],
+		...selectClasses,
+	},
+	{
+		label: "ARTIFACT",
+		selectOptions: [
+			{ label: "NONE", value: "NONE" },
+			{ label: "OSMANTHUS SWORD", value: "OSMANTHUS SWORD" },
+			{ label: "PLAYING CARDS", value: "PLAYING CARDS" },
 		],
 		...selectClasses,
 	},
@@ -131,8 +157,10 @@ export default {
 		const wantYen = inputs.find((x) => x.label === "REQUIRED YEN")!;
 		const rankMulti = selects.find((x) => x.label === "RANK MULTIPLIER")!;
 		const x2GamePass = selects.find((x) => x.label === "x2 YEN GAMEPASS")!;
-		const yenMulti = selects.find((x) => x.label === "NEN MULTIPLIER")!;
+		const nenMulti = selects.find((x) => x.label === "NEN MULTIPLIER")!;
+		const yenBonus = selects.find((x) => x.label === "ARTIFACT LEVEL")!;
 		const heroMulti = selects.find((x) => x.label === "HERO MULTIPLIER")!;
+		const artifact = selects.find((x) => x.label === "ARTIFACT")!;
 		const notify = selects.find((x) => x.label === "TARGET REACHED")!;
 
 		const statInputs = inputs.map((x) => /*html*/ `<div class="col-sm-6 col-md-4">${x.input}</div>`);
@@ -176,9 +204,56 @@ export default {
             </div>
         `);
 
+		// Load saved values
 		if (Notification.permission === "granted" && $storage.has(`notifications:yen:${notify.label}`)) {
 			$(`#${notify.id}`).val($storage.get(`notifications:yen:${notify.label}`));
 		}
+
+		// Load saved multiplier values
+		if ($storage.has(`yen:rank:${rankMulti.label}`)) {
+			rankMulti.$().val($storage.get(`yen:rank:${rankMulti.label}`));
+		}
+
+		if ($storage.has(`yen:gamepass:${x2GamePass.label}`)) {
+			x2GamePass.$().val($storage.get(`yen:gamepass:${x2GamePass.label}`));
+		}
+
+		if ($storage.has(`yen:nen:${nenMulti.label}`)) {
+			nenMulti.$().val($storage.get(`yen:nen:${nenMulti.label}`));
+		}
+
+		if ($storage.has(`yen:bonus:${yenBonus.label}`)) {
+			yenBonus.$().val($storage.get(`yen:bonus:${yenBonus.label}`));
+		} else {
+			// Default to Level 1 (1.05x multiplier = +0.05x bonus)
+			yenBonus.$().val("1.05");
+		}
+
+		if ($storage.has(`yen:hero:${heroMulti.label}`)) {
+			heroMulti.$().val($storage.get(`yen:hero:${heroMulti.label}`));
+		}
+
+		if ($storage.has(`yen:artifact`)) {
+			artifact.$().val($storage.get(`yen:artifact`));
+		} else {
+			// Default to NONE
+			artifact.$().val("NONE");
+		}
+
+		// Save values on change
+		const savedSettings = [rankMulti, x2GamePass, nenMulti, yenBonus, heroMulti, artifact] as const;
+		$(savedSettings.map((x) => `#${x.id}`).join(", ")).on("change", function () {
+			const input = savedSettings.find((x) => x.id === $(this).attr("id"))!;
+			const value = $(this).val() as string;
+
+			if (input.label === "ARTIFACT") {
+				$storage.set(`yen:artifact`, value);
+			} else {
+				$storage.set(`yen:${input.label.toLowerCase().replace(/\s+/g, "")}:${input.label}`, value);
+			}
+
+			toast.info(`${input.label} set to ${value}.`);
+		});
 
 		// REQUEST NOTIFICATION PERMISSION
 		$(`#${notify.id}`).on("change", function () {
@@ -256,11 +331,20 @@ export default {
 				return;
 			}
 
-			// Calculate base value
+			// Calculate base value from rank
 			const rankMultiValue = convertNum(rankMulti.$().val() as string, "parse");
 			const baseVal = rankMultiValue * (x2GamePass.$().val() === "ENABLED" ? 2 : 1);
 
-			const total = baseVal * parseFloat(yenMulti.$().val() as string) * parseFloat(heroMulti.$().val() as string) * champYenMultiVal;
+			// Get all multipliers
+			const nenMultiValue = parseFloat(nenMulti.$().val() as string) || 1;
+			const yenBonusValue = parseFloat(yenBonus.$().val() as string) || 1.05;
+			const heroMultiValue = parseFloat(heroMulti.$().val() as string) || 1;
+
+			// Artifact is just for display, no multiplier value
+			const artifactValue = 1; // Always 1x multiplier regardless of selection
+
+			// Calculate total with all multipliers
+			const total = baseVal * nenMultiValue * yenBonusValue * heroMultiValue * champYenMultiVal * artifactValue;
 
 			$("[data-yen-bypm-label]").text(convertNum(baseVal, "format"));
 			$("[data-yen-ypm-label]").text(convertNum(total, "format"));
@@ -292,7 +376,7 @@ export default {
 				$("[data-yen-ttr-label]").text("TARGET REACHED");
 				if (notify.$().val() === "ENABLED") {
 					new Notification(config.header, {
-						body: "Required coins have been reached!",
+						body: "Required yen have been reached!",
 						icon: "/icons/icon-256.png",
 					});
 				}
@@ -306,7 +390,7 @@ export default {
 					$("[data-yen-ttr-label]").text("TARGET REACHED");
 					if (notify.$().val() === "ENABLED") {
 						new Notification(config.header, {
-							body: "Required coins have been reached!",
+							body: "Required yen have been reached!",
 							icon: "/icons/icon-256.png",
 						});
 					}
