@@ -479,6 +479,59 @@
 			"reward": " 300k Hearts, 15 Hour Self Boost."
 		}
 	],
+
+	"zoro": [
+		{
+			"quest": 1,
+			"requirement": "Gain 10B Sword Skill",
+			"reward": "200k yen, Zaki Blade Sword"
+		},
+		{
+			"quest": 2,
+			"requirement": "Gain 100B Sword Skill",
+			"reward": "350k yen, Demon Sword"
+		},
+		{
+			"quest": 3,
+			"requirement": "Gain 5T Sword Skill",
+			"reward": "2.500M Yen, Scissor Blade"
+		},
+		{
+			"quest": 4,
+			"requirement": "Gain 250T Sword Skill",
+			"reward": "13.50M Yen, Red Pirate's Sword"
+		},
+		{
+			"quest": 5,
+			"requirement": "Gain 50qd Sword Skill",
+			"reward": "100M yen, True Strike Sword"
+		},
+		{
+			"quest": 6,
+			"requirement": "Gain 1Qn Sword Skill",
+			"reward": "500M Yen, Dark Blade Sword"
+		},
+		{
+			"quest": 7,
+			"requirement": "Gain 100Qn Sword Skill",
+			"reward": "7.5B Yen, Impact Spear"
+		},
+		{
+			"quest": 8,
+			"requirement": "Gain 1sx Sword Skill",
+			"reward": "50B Yen, Excalibur Sword"
+		},
+		{
+			"quest": 9,
+			"requirement": "Gain 100sx Sword Skill",
+			"reward": "75k Chikara, Gods Axe, 250B Yen"
+		},
+		{
+			"quest": 10,
+			"requirement": "Gain 1sp Sword Skill",
+			"reward": "100k Chikara, Sword of Rupture Sword, 5T Yen"
+		}
+	],
 	"erza": [
 		{
 			"quest": 1,
