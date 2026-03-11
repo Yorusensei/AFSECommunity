@@ -1,5 +1,5 @@
 {
-	"version": "4.8.4",
+	"version": "5.2",
 	"changelog": [
 		{
 			"type": "removed",
@@ -115,6 +115,11 @@
 			"type": "added",
 			"timestamp": 1772314895816,
 			"list": ["Added Artifacts on Yen calculator."]
+		},
+		{
+			"type": "added",
+			"timestamp": 1773272026700,
+			"list": ["Added Champions , Questlines."]
 		}
 	]
 }

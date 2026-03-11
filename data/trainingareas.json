@@ -136,20 +136,20 @@
 			},
 			{
 				"name": "1SX - Monster Cube",
-				"details": "Infront of Founder Titan.",
+				"details": "Near Iced Rose Spike.",
 				"images": [
 					{
-						"path": "/trainingareas/Screenshot 2026-02-06 021122.png",
+						"path": "/trainingareas/Screenshot 2026-03-09 221957.png",
 						"caption": ""
 					}
 				]
 			},
 			{
 				"name": "100SX - Iced Rose Spikes",
-				"details": "Near Time Chamber.",
+				"details": "Near Monster Cube.",
 				"images": [
 					{
-						"path": "/trainingareas/Screenshot 2026-02-06 021333.png",
+						"path": "/trainingareas/Screenshot 2026-03-09 221912.png",
 						"caption": ""
 					}
 				]
@@ -159,7 +159,51 @@
 				"details": "Fly around. You can also use navigation on your bottom left.",
 				"images": [
 					{
-						"path": "/trainingareas/Screenshot 2026-02-06 021547.png",
+						"path": "/trainingareas/Screenshot 2026-03-09 222101.png",
+						"caption": ""
+					}
+				]
+			},
+			{
+				"name": "100SP - Road Roller",
+				"details": "Near Lobby.",
+				"images": [
+					{
+						"path": "/trainingareas/Screenshot 2026-03-11 004059.png",
+						"caption": ""
+					}
+				]
+			},
+			{
+				"name": "1OC - Inner World",
+				"details": "Near Lobby Area.",
+				"images": [
+					{
+						"path": "/trainingareas/Screenshot 2026-03-11 005419.png",
+						"caption": "Outside"
+					},
+					{
+						"path": "/trainingareas/Screenshot 2026-03-11 005541.png",
+						"caption": "Inside"
+					}
+				]
+			},
+			{
+				"name": "100OC - Executor",
+				"details": "Near Nasa Ship 1OC Durability.",
+				"images": [
+					{
+						"path": "/trainingareas/Screenshot 2026-03-11 005704.png",
+						"caption": ""
+					}
+				]
+			},
+			{
+				"name": "1N - Grimoire Tower",
+				"details": "Near Kunai Field 100SX Chakra.",
+				"images": [
+					{
+						"path": "/trainingareas/Screenshot 2026-03-11 005916.png",
 						"caption": ""
 					}
 				]
@@ -307,30 +351,70 @@
 			},
 			{
 				"name": "1SX - Dark Palace",
-				"details": "Near Rengoku NPC.",
+				"details": "Near Shino Academy.",
 				"images": [
 					{
-						"path": "/trainingareas/Screenshot 2026-02-06 021210.png",
+						"path": "/trainingareas/Screenshot 2026-03-09 221606.png",
 						"caption": ""
 					}
 				]
 			},
 			{
 				"name": "100SX - Galleon Ship",
-				"details": "Near Desert Island.",
+				"details": "Check the Edges.",
 				"images": [
 					{
-						"path": "/trainingareas/Screenshot 2026-02-06 021312.png",
+						"path": "/trainingareas/Screenshot 2026-03-09 222333.png",
 						"caption": ""
 					}
 				]
 			},
 			{
 				"name": "1SP - Caravel Ship",
-				"details": "Roam on sky",
+				"details": "Check the map edges.",
 				"images": [
 					{
-						"path": "/trainingareas/Screenshot 2026-02-06 021608.png",
+						"path": "/trainingareas/Screenshot 2026-03-09 221731.png",
+						"caption": ""
+					}
+				]
+			},
+			{
+				"name": "100SP - Flame of Cremation",
+				"details": "Near Villages.",
+				"images": [
+					{
+						"path": "/trainingareas/Screenshot 2026-03-11 004247.png",
+						"caption": ""
+					}
+				]
+			},
+			{
+				"name": "1OC - Nasa Ship",
+				"details": "Near Executor 100OC Strength.",
+				"images": [
+					{
+						"path": "/trainingareas/Screenshot 2026-03-11 005104.png",
+						"caption": ""
+					}
+				]
+			},
+			{
+				"name": "100OC - Amaterasu Generator",
+				"details": "Near Nanami Mini Boss NPC.",
+				"images": [
+					{
+						"path": "/trainingareas/Screenshot 2026-03-11 005644.png",
+						"caption": ""
+					}
+				]
+			},
+			{
+				"name": "1N -Demon Web",
+				"details": "Near Nanami Mini Boss NPC.",
+				"images": [
+					{
+						"path": "/trainingareas/Screenshot 2026-03-11 014422.png",
 						"caption": ""
 					}
 				]
@@ -478,30 +562,70 @@
 			},
 			{
 				"name": "1SX - Divine Plant",
-				"details": "Near Rimuru NPC on Ice land.",
+				"details": "Near Monster Cube 1SX Strength.",
 				"images": [
 					{
-						"path": "/trainingareas/Screenshot 2026-02-06 021033.png",
+						"path": "/trainingareas/Screenshot 2026-03-09 222019.png",
 						"caption": ""
 					}
 				]
 			},
 			{
 				"name": "100SX - Kunai's Field",
-				"details": "Near Library 10K Chakra.",
+				"details": "Near Field Selection 1N Chakra.",
 				"images": [
 					{
-						"path": "/trainingareas/Screenshot 2026-02-06 021450.png",
+						"path": "/trainingareas/Screenshot 2026-03-09 221749.png",
 						"caption": ""
 					}
 				]
 			},
 			{
 				"name": "1SP - Shino Academy",
-				"details": "Near Heavenly Pillar 100QN Strength.",
+				"details": "Near Dark Palace 1SX Durability.",
 				"images": [
 					{
-						"path": "/trainingareas/Screenshot 2026-02-06 021523.png",
+						"path": "/trainingareas/Screenshot 2026-03-09 221507.png",
+						"caption": ""
+					}
+				]
+			},
+			{
+				"name": "100SP - Coffin Boat",
+				"details": "Near Land.",
+				"images": [
+					{
+						"path": "/trainingareas/Screenshot 2026-03-11 004601.png",
+						"caption": ""
+					}
+				]
+			},
+			{
+				"name": "1OC - Anteiku",
+				"details": "Near Villages.",
+				"images": [
+					{
+						"path": "/trainingareas/Screenshot 2026-03-11 004959.png",
+						"caption": ""
+					}
+				]
+			},
+			{
+				"name": "100OC - Beeru's Planet",
+				"details": "Near Broly Boss Stage.",
+				"images": [
+					{
+						"path": "/trainingareas/Screenshot 2026-03-11 005817.png",
+						"caption": ""
+					}
+				]
+			},
+			{
+				"name": "1N - Field Selection",
+				"details": "Near Kunai Field 100SX Chakra.",
+				"images": [
+					{
+						"path": "/trainingareas/Screenshot 2026-03-11 005858.png",
 						"caption": ""
 					}
 				]

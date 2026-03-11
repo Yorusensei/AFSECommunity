@@ -637,5 +637,131 @@
 			"requirement": "Defeat 500 Mini Bosses.",
 			"reward": "3 Days Self Boost."
 		}
+	],
+	"yuta": [
+		{
+			"quest": 1,
+			"requirement": "Gain 100SP Chakra.",
+			"reward": "2.500T Yen."
+		},
+		{
+			"quest": 2,
+			"requirement": " Gain 1OC Chakra.",
+			"reward": "5T Yen."
+		},
+		{
+			"quest": 3,
+			"requirement": "Gain 100OC Chakra",
+			"reward": "8T Yen."
+		},
+		{
+			"quest": 4,
+			"requirement": "Gain 1N Chakra.",
+			"reward": "40T Yen, 20 Trait rerolls."
+		}
+	],
+	"tanjiro": [
+		{
+			"quest": 1,
+			"requirement": "Gain 5k incremental of Strength, Durability, and Chakra.",
+			"reward": "25k Chikara."
+		},
+		{
+			"quest": 2,
+			"requirement": "Defeat  1 Whitebeard.",
+			"reward": "6 Hours Self Boost."
+		},
+		{
+			"quest": 3,
+			"requirement": "Gain 1SP on Sword ",
+			"reward": "1T Yen."
+		},
+		{
+			"quest": 4,
+			"requirement": "Gain 10k incremental of Strength, Durability, and Chakra.",
+			"reward": "35k Chikara."
+		},
+		{
+			"quest": 5,
+			"requirement": "Defeat 5 Players using any breathing styles.",
+			"reward": "Sun Breathing Technique Special."
+		},
+		{
+			"quest": 6,
+			"requirement": "Defeat 10 Broly.",
+			"reward": "9 Hours Self Boost."
+		},
+		{
+			"quest": 7,
+			"requirement": "Gain 17.5k incremental of Strength, Durability, and Chakra.",
+			"reward": "45K Chikara."
+		},
+		{
+			"quest": 8,
+			"requirement": "Gain 100SP on Strength, Durability, and Chakra.",
+			"reward": "2.5T Yen."
+		},
+		{
+			"quest": 9,
+			"requirement": " Defeat 10 Broly.",
+			"reward": "12 Hours Self Boost."
+		},
+		{
+			"quest": 10,
+			"requirement": "Gain 25k incremental of Strength, Durability, and Chakra.",
+			"reward": "20 Trait Rerolls, 55k Chikara and +5 Champion Inventory (F2P)."
+		}
+	],
+	"Jotaro": [
+		{
+			"quest": 1,
+			"requirement": "Defeat 1 Whitebeard.",
+			"reward": "6 Hours Self Boost."
+		},
+		{
+			"quest": 2,
+			"requirement": "Defeat 5 Broly.",
+			"reward": "9 Hours Self Boost."
+		},
+		{
+			"quest": 3,
+			"requirement": "Gain 5K Increments of Chakra.",
+			"reward": "25k Chikara."
+		},
+		{
+			"quest": 4,
+			"requirement": " Gain 1SP Chakra.",
+			"reward": "1T Yen."
+		},
+		{
+			"quest": 5,
+			"requirement": "Kill 5 Players with a Stand.",
+			"reward": "12 Hours Self Boost."
+		},
+		{
+			"quest": 6,
+			"requirement": "Gain 10k Increments of Chakra.",
+			"reward": "35k Chikara."
+		},
+		{
+			"quest": 7,
+			"requirement": "Gain 100SP Chakra.",
+			"reward": "2.500T Yen."
+		},
+		{
+			"quest": 8,
+			"requirement": "Defeat 15 Broly.",
+			"reward": "15 Hours Self Boost."
+		},
+		{
+			"quest": 9,
+			"requirement": "Gain 15k Increments of Chakra.",
+			"reward": "45k Chikara."
+		},
+		{
+			"quest": 10,
+			"requirement": "Gain 1OC Chakra.",
+			"reward": "20 Trait Rerolls, 5T Yen and Jotaro Champion."
+		}
 	]
 }

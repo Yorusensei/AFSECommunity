@@ -173,7 +173,7 @@
 		"chance": "3.84%",
 		"cost": "7500 SHARDS",
 		"board": 1,
-		"desc": "Auto trains 45% of your Durability multiplier every $ seconds. Specially buffs stand damage by 20% and nerfs incoming stand damage by 25%",
+		"desc": "Auto trains 45% of your Durability multiplier every 4 seconds. Specially buffs stand damage by 20% and nerfs incoming stand damage by 25%",
 		"stats": {
 			"base": {
 				"durability": 0.45
@@ -422,11 +422,11 @@
 		"chance": "0.005%",
 		"cost": "7500 SHARDS",
 		"board": 1,
-		"desc": "Auto trains 160% of your Strength, 175% of your Durability. Nerfs all player damage by 50% buffs all damage by 100% increase your Chikara Per Min by x1.5, increases your Yen per Min by x1.25.",
+		"desc": "Auto trains 175% of your Strength, 195% of your Durability. Nerfs all player damage by 50% buffs all damage by 100% increase your Chikara Per Min by x1.5, increases your Yen per Min by x1.25.",
 		"stats": {
 			"base": {
-				"strength": 1.6,
-				"durability": 1.75
+				"strength": 1.75,
+				"durability": 1.95
 			},
 			"modifiers": {
 				"all_damage": {
@@ -1029,6 +1029,113 @@
 			"modifiers": {
 				"yen_income": {
 					"increased_income_value": 0.2
+				}
+			}
+		}
+	},
+	{
+		"name": "Broly",
+		"chance": "Broly Boss Drop",
+		"cost": "EVENT ONLY",
+		"board": 3,
+		"desc": "Auto trains 185% of your Durability, 190% of your Sword, Buffs Broly damage by 2.5x and Broly drop chances by 2x, increases your Yen Per Min by x1.25.",
+		"stats": {
+			"base": {
+				"durability": 1.85,
+				"sword": 1.9
+			},
+			"modifiers": {
+				"yen_income": {
+					"increased_income_value": 0.25
+				}
+			}
+		}
+	},
+	{
+		"name": "JOTARO",
+		"chance": "Jotaro Quest",
+		"cost": "EVENT ONLY",
+		"board": 3,
+		"desc": "Auto trains 175% of your Strength, increases your Yen Per Min by x1.25, Increases your Stand Damage by x1.5.",
+		"stats": {
+			"base": {
+				"strength": 1.75
+			},
+			"modifiers": {
+				"yen_income": {
+					"increased_income_value": 0.25
+				}
+			}
+		}
+	},
+	{
+		"name": "YOTA",
+		"chance": "FPass Season 2 Tier 45",
+		"cost": "EVENT ONLY",
+		"board": 3,
+		"desc": "Auto trains 325% of your Chakra, increases your Yen Per Min by x1.2.",
+		"stats": {
+			"base": {
+				"chakra": 3.25
+			},
+			"modifiers": {
+				"yen_income": {
+					"increased_income_value": 0.2
+				}
+			}
+		}
+	},
+	{
+		"name": "NANAMI",
+		"chance": "0.1%",
+		"cost": "EVENT ONLY",
+		"board": 3,
+		"desc": "Auto trains 185% of your Sword, increases your Yen Per Min by x1.2, Increases your cursed technique damage by 1.5x.",
+		"stats": {
+			"base": {
+				"sword": 1.85
+			},
+			"modifiers": {
+				"yen_income": {
+					"increased_income_value": 0.2
+				}
+			}
+		}
+	},
+	{
+		"name": "MAKI",
+		"chance": "FPass Season 2 Tier 45",
+		"cost": "EVENT ONLY",
+		"board": 3,
+		"desc": "Auto trains 195% of your Durability, increases your Yen Per Min by x1.25.",
+		"stats": {
+			"base": {
+				"durability": 1.95
+			},
+			"modifiers": {
+				"yen_income": {
+					"increased_income_value": 0.25
+				}
+			}
+		}
+	},
+	{
+		"name": "Dio",
+		"chance": "0.02%",
+		"cost": "EVENT ONLY",
+		"board": 3,
+		"desc": "Auto trains 160% of your Strength, 160% of your Durability, 215% of your Chakra, 125% of your Sword, 125% of your Speed, 125% of your Agility increases your Yen Per Min by x1.15.",
+		"stats": {
+			"base": {
+				"strength": 1.6,
+				"durability": 1.6,
+				"chakra": 2.15,
+				"sword": 1.25,
+				"agility": 1.25
+			},
+			"modifiers": {
+				"yen_income": {
+					"increased_income_value": 0.15
 				}
 			}
 		}
