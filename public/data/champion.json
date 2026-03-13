@@ -1087,7 +1087,7 @@
 	},
 	{
 		"name": "NANAMI",
-		"chance": "0.1%",
+		"chance": "0.01%",
 		"cost": "EVENT ONLY",
 		"board": 3,
 		"desc": "Auto trains 185% of your Sword, increases your Yen Per Min by x1.2, Increases your cursed technique damage by 1.5x.",
