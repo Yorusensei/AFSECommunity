@@ -647,17 +647,17 @@
 		{
 			"quest": 2,
 			"requirement": " Gain 1OC Chakra.",
-			"reward": "5T Yen."
+			"reward": "20T Yen."
 		},
 		{
 			"quest": 3,
 			"requirement": "Gain 100OC Chakra",
-			"reward": "8T Yen."
+			"reward": "100T Yen."
 		},
 		{
 			"quest": 4,
 			"requirement": "Gain 1N Chakra.",
-			"reward": "40T Yen, 20 Trait rerolls."
+			"reward": "400T Yen, 20 Trait rerolls."
 		}
 	],
 	"tanjiro": [
@@ -762,6 +762,70 @@
 			"quest": 10,
 			"requirement": "Gain 1OC Chakra.",
 			"reward": "20 Trait Rerolls, 5T Yen and Jotaro Champion."
+		}
+	],
+	"Hermit": [
+		{
+			"quest": 1,
+			"requirement": "Gain 5k Increments of Chakra and Strength.",
+			"reward": "25k Chikara, Flame Dragon Road."
+		},
+		{
+			"quest": 2,
+			"requirement": "Gain 7.5k Increments of Chakra and Durability.",
+			"reward": "35k Chikara, Fallen Down."
+		},
+		{
+			"quest": 3,
+			"requirement": "Gain 10k Increments of Chakra and Strength and Agility.",
+			"reward": "45k Chikara and Lightning Hand."
+		},
+		{
+			"quest": 4,
+			"requirement": "Gain 25k Increments of Chakra.",
+			"reward": "55k Chikara and Black Flames."
+		},
+		{
+			"quest": 5,
+			"requirement": "Gain 15k Increments of Chakra and Strength.",
+			"reward": "65k Chikara and Rock, Paper, Scissor."
+		},
+		{
+			"quest": 6,
+			"requirement": "Gain 15k Increments of Chakra and Durability and Sword.",
+			"reward": "75k Chikara and Perfect Skeleton and 20 Trait Rerolls."
+		}
+	],
+	"Maki": [
+		{
+			"quest": 1,
+			"requirement": "Gain 100SP Physical Strength.",
+			"reward": "2.500T Yen."
+		},
+		{
+			"quest": 2,
+			"requirement": "Gain 100SP Durability.",
+			"reward": "2.500T Yen."
+		},
+		{
+			"quest": 3,
+			"requirement": "Gain 1OC Physical Strength.",
+			"reward": "20T Yen."
+		},
+		{
+			"quest": 4,
+			"requirement": "Gain 1OC Durability.",
+			"reward": "20T Yen."
+		},
+		{
+			"quest": 5,
+			"requirement": "Gain 100OC Strength.",
+			"reward": "100T Yen."
+		},
+		{
+			"quest": 6,
+			"requirement": " Gain 100OC Durability.",
+			"reward": "100T Yen."
 		}
 	]
 }
